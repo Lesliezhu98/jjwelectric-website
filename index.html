@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJW Electric and Instrument Engineering Limited | Cable Cleats, Cable Ties, Terminal Lugs</title>
+    <meta name="description" content="JJW Electric - Stainless steel cable cleats, cable ties, terminal lugs, hose clamps, conduit fittings manufacturer in Shanghai, China. Serving oil & gas, petrochemical, marine industries.">
+    <link rel="icon" href="assets/jjw-logo.jpg">
+    <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --accent: #1e3a5f;
+            --light: #f8f8f8;
+            --border: #e5e5e5;
+            --text: #333;
+            --text-light: #666;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* ===== Header ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .header-top {
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--accent);
+        }
+
+        .nav-bar {
+            background: var(--primary);
+            padding: 0 24px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links a {
+            display: block;
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .lang-switch {
+            color: var(--white);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 14px 8px;
+        }
+
+        .lang-switch:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            margin-top: 96px;
+            height: 70vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-control-room.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 24px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #d04e20;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            margin-left: 12px;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        /* ===== Sections ===== */
+        .section {
+            padding: 80px 24px;
+        }
+
+        .section-alt {
+            background: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-tag {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 17px;
+            color: var(--text-light);
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+
+        /* ===== About ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        /* ===== Stats ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .stat-item p {
+            font-size: 15px;
+            color: var(--text-light);
+        }
+
+        /* ===== Products ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+        .product-card-img {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: var(--light);
+        }
+
+        .product-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-card-img img {
+            transform: scale(1.05);
+        }
+
+        .product-card-body {
+            padding: 24px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+
+        .product-card .read-more {
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* ===== Applications ===== */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .app-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .app-item .app-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 16px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .app-item h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .app-item p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* ===== News ===== */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .news-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .news-card-img {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .news-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-card-body {
+            padding: 20px;
+        }
+
+        .news-card-date {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .news-card h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-card p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* ===== Contact ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-item .icon {
+            width: 48px;
+            height: 48px;
+            background: var(--light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .contact-item p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.8);
+            padding: 60px 24px 20px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p, .footer-col a {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            text-align: center;
+        }
+
+        /* ===== Product Detail Page ===== */
+        .product-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            z-index: 2000;
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .product-page.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .product-page-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 120px 24px 60px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .product-page-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 32px;
+            cursor: pointer;
+        }
+
+        .product-page-back:hover {
+            gap: 12px;
+        }
+
+        .product-detail-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .gallery {
+            margin-bottom: 40px;
+        }
+
+        .gallery-main {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--light);
+            margin-bottom: 12px;
+        }
+
+        .gallery-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .gallery-thumb {
+            width: 80px;
+            height: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 0.6;
+            border: 2px solid transparent;
+        }
+
+        .gallery-thumb.active {
+            opacity: 1;
+            border-color: var(--accent);
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .detail-section {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .detail-section h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .detail-type-block {
+            margin-bottom: 32px;
+            padding: 28px;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .detail-type-block h5 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .detail-type-img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 16px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .detail-type-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .detail-type-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .detail-spec-item {
+            background: var(--white);
+            padding: 12px 16px;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .detail-spec-label {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .detail-spec-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .detail-table-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .detail-table-img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .selection-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .selection-step {
+            padding: 24px;
+            background: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .selection-step-num {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background: var(--accent);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .selection-step h6 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .selection-step p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-light);
+        }
+
+        .product-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .product-type-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .product-type-img {
+            width: 100%;
+            height: 120px;
+            background: var(--light);
+            overflow: hidden;
+        }
+
+        .product-type-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .product-type-name {
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .modal-cta {
+            margin-top: 40px;
+            padding: 32px;
+            background: var(--light);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .modal-cta p {
+            font-size: 16px;
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+
+        /* ===== News Detail Page ===== */
+        .news-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            z-index: 2000;
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .news-page.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .news-page-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 24px 60px;
+        }
+
+        .news-detail-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .news-detail-meta {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .news-detail-content {
+            font-size: 16px;
+            line-height: 1.9;
+            color: var(--text);
+        }
+
+        .news-detail-content p {
+            margin-bottom: 20px;
+        }
+
+        .news-detail-content h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        /* ===== Preload ===== */
+        .preload {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 992px) {
+            .products-grid, .news-grid, .apps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .products-grid, .news-grid, .apps-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 3000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: #16304f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ===== Header ===== -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="assets/jjw-logo.jpg" alt="JJW Electric Logo">
+                <div class="logo-text">JJW <span>Electric & Instrument Engineering</span></div>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                    <li><a href="#applications" data-i18n="nav_apps">Applications</a></li>
+                    <li><a href="#news" data-i18n="nav_news">News</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <span class="lang-switch" onclick="toggleLang()">EN / 中文</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Electrical Bulk Integration Manufacturer</h1>
+            <p data-i18n="hero_subtitle">One-stop supplier of cable cleats, cable ties, terminal lugs and conduit fittings for industrial applications</p>
+            <a href="#products" class="btn btn-primary" data-i18n="hero_cta">Explore Products</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-tag" data-i18n="about_tag">About Us</div>
+            <h2 class="section-title" data-i18n="about_title">Reliable Electrical Accessories Manufacturer</h2>
+            <p class="section-subtitle" data-i18n="about_subtitle">Shanghai JJW Electric and Instrument Engineering Co., Ltd. is a professional manufacturer and supplier of electrical and instrumentation products, serving customers worldwide.</p>
+
+            <div class="about-grid">
+                <img src="assets/pdf-p5-img1.jpeg" alt="JJW Factory" class="about-img">
+                <div class="about-text">
+                    <h3 data-i18n="about_h3">Who We Are</h3>
+                    <p data-i18n="about_p1">JJW Electric and Instrument Engineering Limited is a manufacturer and developer offering high-performance clamping, fastening, and bundling products to diverse markets. Our main products include stainless steel cable ties, stainless steel cable cleats, nylon cable ties, cable terminals, and more.</p>
+                    <p data-i18n="about_p2">With our rolling factory located in Ningbo, Zhejiang Province, we provide high-quality products and customized solutions to customers in oil & gas, petrochemical, pharmaceutical, marine, and railway industries worldwide.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 60px;">
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p data-i18n="stat1">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p data-i18n="stat2">Products Models</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p data-i18n="stat3">Countries Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3>ISO</h3>
+                    <p data-i18n="stat4">Certified Quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="section section-alt" id="products">
+        <div class="container">
+            <div class="section-tag" data-i18n="products_tag">Products</div>
+            <h2 class="section-title" data-i18n="products_title">Our Product Range</h2>
+            <p class="section-subtitle" data-i18n="products_subtitle">We offer a comprehensive range of cable management and electrical installation products.</p>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Applications ===== -->
+    <section class="section" id="applications">
+        <div class="container">
+            <div class="section-tag" data-i18n="apps_tag">Applications</div>
+            <h2 class="section-title" data-i18n="apps_title">Industries We Serve</h2>
+            <p class="section-subtitle" data-i18n="apps_subtitle">Our products are widely used in various industries and demanding environments.</p>
+
+            <div class="apps-grid">
+                <div class="app-item">
+                    <div class="app-icon">⛽</div>
+                    <h4 data-i18n="app1_title">Oil & Gas</h4>
+                    <p data-i18n="app1_desc">Upstream, midstream and downstream facilities</p>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">🏭</div>
+                    <h4 data-i18n="app2_title">Petrochemical</h4>
+                    <p data-i18n="app2_desc">Refineries, chemical plants and processing units</p>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">🚢</div>
+                    <h4 data-i18n="app3_title">Marine</h4>
+                    <p data-i18n="app3_desc">Shipbuilding, offshore platforms and ports</p>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">⚡</div>
+                    <h4 data-i18n="app4_title">Power Generation</h4>
+                    <p data-i18n="app4_desc">Power plants, substations and transmission</p>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">🚄</div>
+                    <h4 data-i18n="app5_title">Railway</h4>
+                    <p data-i18n="app5_desc">Urban rail, high-speed rail and signaling</p>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">🏗️</div>
+                    <h4 data-i18n="app6_title">Construction</h4>
+                    <p data-i18n="app6_desc">Commercial and industrial building projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== News ===== -->
+    <section class="section section-alt" id="news">
+        <div class="container">
+            <div class="section-tag" data-i18n="news_tag">News</div>
+            <h2 class="section-title" data-i18n="news_title">News & Insights</h2>
+            <p class="section-subtitle" data-i18n="news_subtitle">Professional product knowledge, industry applications and technical guides.</p>
+
+            <div class="news-grid" id="newsGrid">
+                <!-- News cards will be rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-tag" data-i18n="contact_tag">Contact Us</div>
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">Feel free to contact us for product inquiries, technical support or business cooperation.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-i18n="contact_h3">Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h4 data-i18n="contact_address">Address</h4>
+                            <p>Room 1604, Yunhua Technical Building<br>No. 912, Gonghexin Road<br>Jing'an District, Shanghai, P.R.China 200070</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h4 data-i18n="contact_phone">Telephone / Fax</h4>
+                            <p>+86-21-60534393</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <h4 data-i18n="contact_email">Email</h4>
+                            <p>leslie.zhu@jjwelectric.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="font-size: 24px; font-weight: 700; color: var(--primary); margin-bottom: 24px;" data-i18n="contact_h3_2">Send Us a Message</h3>
+                    <p style="color: var(--text-light); margin-bottom: 24px; line-height: 1.8;" data-i18n="contact_desc">For product catalogs, technical specifications, pricing or any inquiries, please send us an email and we will get back to you within 24 hours.</p>
+                    <a href="mailto:leslie.zhu@jjwelectric.com" class="btn btn-primary" data-i18n="contact_btn">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>JJW Electric and Instrument Engineering Limited</h4>
+                <p>Shanghai JJW Electric and Instrument Engineering Co., Ltd. is a professional manufacturer and supplier of electrical and instrumentation products.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_about">About Us</h4>
+                <p><a href="#about" data-i18n="footer_about_link">Company Profile</a></p>
+                <p><a href="#applications" data-i18n="footer_apps">Applications</a></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_products">Products</h4>
+                <p><a href="#products" data-i18n="footer_prod1">Cable Cleats</a></p>
+                <p><a href="#products" data-i18n="footer_prod2">Cable Ties</a></p>
+                <p><a href="#products" data-i18n="footer_prod3">Terminal Lugs</a></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_contact">Contact</h4>
+                <p>+86-21-60534393</p>
+                <p>leslie.zhu@jjwelectric.com</p>
+                <p>Shanghai, China</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 JJW Electric and Instrument Engineering Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- ===== Product Detail Page ===== -->
+    <div class="product-page" id="productModal">
+        <div class="product-page-inner">
+            <div class="product-page-back" onclick="closeProductPage()">
+                <span>←</span>
+                <span data-i18n="product_back">Back to Products</span>
+            </div>
+            <div class="breadcrumb" id="breadcrumb"></div>
+            <h1 class="product-detail-title" id="modalTitle"></h1>
+            <div class="gallery" id="modalGallery">
+                <div class="gallery-main">
+                    <img id="galleryMainImg" src="" alt="">
+                </div>
+                <div class="gallery-thumbs" id="galleryThumbs"></div>
+            </div>
+            <div id="modalOverviewSection">
+                <div class="detail-section" style="border-top: none; padding-top: 0;">
+                    <h4 data-i18n="modal_overview">Product Overview</h4>
+                    <p class="detail-type-desc" id="modalOverview"></p>
+                </div>
+            </div>
+            <div class="detail-section" id="modalTypesSection">
+                <h4 data-i18n="modal_types">Product Types</h4>
+                <div class="product-types-grid" id="modalTypesGrid"></div>
+            </div>
+            <div id="modalDetailContent"></div>
+            <div class="modal-cta">
+                <p data-i18n="modal_cta_text">Need full product catalog and technical specifications? Contact us for detailed information.</p>
+                <a href="#contact" class="btn btn-primary" onclick="closeProductPage()" data-i18n="modal_cta_btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== News Detail Page ===== -->
+    <div class="news-page" id="newsModal">
+        <div class="news-page-inner">
+            <div class="product-page-back" onclick="closeNewsPage()">
+                <span>←</span>
+                <span data-i18n="news_back">Back to News</span>
+            </div>
+            <div class="breadcrumb" id="newsBreadcrumb"></div>
+            <h1 class="news-detail-title" id="newsTitle"></h1>
+            <div class="news-detail-meta" id="newsMeta"></div>
+            <div class="news-detail-content" id="newsContent"></div>
+        </div>
+    </div>
+
+    <!-- ===== Preload Images ===== -->
+    <div class="preload">
+        <img src="assets/jjw-logo.jpg" alt="">
+        <img src="assets/hero-control-room.jpg" alt="">
+        <img src="assets/pdf-p5-img1.jpeg" alt="">
+        <img src="assets/product-cable-cleats-new2.png" alt="">
+        <img src="assets/product-terminal-lugs-new.png" alt="">
+        <img src="assets/product-ss-cable-ties-new.png" alt="">
+        <img src="assets/product-nylon-cable-ties-new.png" alt="">
+        <img src="assets/product-hose-clamps-new2.png" alt="">
+        <img src="assets/product-conduit-fittings-new.png" alt="">
+        <img src="assets/product-p-clip-clamps-new.png" alt="">
+        <img src="assets/prod-1-gallery-1.jpg" alt="">
+        <img src="assets/prod-1-gallery-2.jpg" alt="">
+        <img src="assets/prod-1-gallery-3.jpg" alt="">
+        <img src="assets/prod-1-gallery-4.jpg" alt="">
+        <img src="assets/prod-2-gallery-1.jpg" alt="">
+        <img src="assets/prod-2-gallery-2.jpg" alt="">
+        <img src="assets/prod-2-gallery-3.jpg" alt="">
+        <img src="assets/prod-2-gallery-4.jpg" alt="">
+        <img src="assets/prod-3-gallery-1.jpg" alt="">
+        <img src="assets/prod-3-gallery-2.jpg" alt="">
+        <img src="assets/prod-3-gallery-3.jpg" alt="">
+        <img src="assets/prod-3-gallery-4.jpg" alt="">
+        <img src="assets/prod-4-gallery-1.jpg" alt="">
+        <img src="assets/prod-4-gallery-2.jpg" alt="">
+        <img src="assets/prod-4-gallery-3.jpg" alt="">
+        <img src="assets/prod-5-gallery-1.jpg" alt="">
+        <img src="assets/prod-5-gallery-2.jpg" alt="">
+        <img src="assets/prod-6-gallery-1.jpg" alt="">
+        <img src="assets/prod-6-gallery-2.jpg" alt="">
+        <img src="assets/prod-6-gallery-3.jpg" alt="">
+        <img src="assets/prod-6-gallery-4.jpg" alt="">
+        <img src="assets/prod-7-gallery-1.jpg" alt="">
+        <img src="assets/prod-7-gallery-2.jpg" alt="">
+        <img src="assets/prod-7-gallery-3.jpg" alt="">
+        <img src="assets/prod-1-type-stcc-v.jpg" alt="">
+        <img src="assets/prod-1-type-stcc-d.jpg" alt="">
+        <img src="assets/prod-1-type-stcc-s.jpg" alt="">
+        <img src="assets/prod-2-type-ring.jpg" alt="">
+        <img src="assets/prod-2-type-spade.jpg" alt="">
+        <img src="assets/prod-2-type-tubular.jpg" alt="">
+        <img src="assets/prod-2-type-connector.jpg" alt="">
+        <img src="assets/prod-2-type-splice.jpg" alt="">
+        <img src="assets/prod-2-type-pin.jpg" alt="">
+        <img src="assets/prod-3-type-ball-lock.jpg" alt="">
+        <img src="assets/prod-3-type-ladder-lock.jpg" alt="">
+        <img src="assets/prod-3-type-wing-lock.jpg" alt="">
+        <img src="assets/prod-3-type-releasable.jpg" alt="">
+        <img src="assets/prod-3-type-double-ball.jpg" alt="">
+        <img src="assets/prod-4-type-self-locking.jpg" alt="">
+        <img src="assets/prod-4-type-tags.jpg" alt="">
+        <img src="assets/prod-5-type-standard.jpg" alt="">
+        <img src="assets/prod-5-type-heavy-duty.jpg" alt="">
+        <img src="assets/prod-6-type-type-c.jpg" alt="">
+        <img src="assets/prod-6-type-type-lb.jpg" alt="">
+        <img src="assets/prod-6-type-type-ll.jpg" alt="">
+        <img src="assets/prod-6-type-type-lr.jpg" alt="">
+        <img src="assets/prod-7-type-rubber-lined.jpg" alt="">
+        <img src="assets/prod-7-type-pvc-lined.jpg" alt="">
+        <img src="assets/cleat-overview.jpg" alt="">
+        <img src="assets/cleat-intro.jpg" alt="">
+        <img src="assets/cleat-tech-spec.jpg" alt="">
+        <img src="assets/cleat-stcc-v-table.jpg" alt="">
+        <img src="assets/cleat-stcc-d-table.jpg" alt="">
+        <img src="assets/cleat-stcc-s-table.jpg" alt="">
+        <img src="assets/prod2-intro.jpg" alt="">
+        <img src="assets/prod2-ring-table.jpg" alt="">
+        <img src="assets/prod2-spade-table.jpg" alt="">
+        <img src="assets/prod2-tubular-table.jpg" alt="">
+        <img src="assets/prod3-ball-features.jpg" alt="">
+        <img src="assets/prod3-ball-table.jpg" alt="">
+        <img src="assets/prod3-ladder-features.jpg" alt="">
+        <img src="assets/prod3-ladder-table.jpg" alt="">
+        <img src="assets/prod3-wing-table.jpg" alt="">
+        <img src="assets/prod4-features.jpg" alt="">
+        <img src="assets/prod4-table.jpg" alt="">
+        <img src="assets/prod4-tags.jpg" alt="">
+        <img src="assets/prod5-features.jpg" alt="">
+        <img src="assets/prod6-type-c-lb-table.jpg" alt="">
+        <img src="assets/prod6-type-ll-lr-table.jpg" alt="">
+        <img src="assets/prod7-features.jpg" alt="">
+        <img src="assets/prod7-table.jpg" alt="">
+    </div>
+
+    <script>
+        // ===== Product Data =====
+        const products = [
+            {
+                id: 1,
+                img: "assets/product-cable-cleats-new2.png",
+                name_zh: "不锈钢电缆固定夹",
+                name_en: "Stainless Steel Cable Cleats",
+                desc_zh: "316L船用不锈钢电缆固定夹，适用于单芯、双芯、三芯电缆，符合IEC 61914标准。",
+                desc_en: "Marine-grade 316L stainless steel cable cleats for single, double and trefoil cables. IEC 61914 certified.",
+                gallery: [
+                    "assets/product-cable-cleats-new2.png",
+                    "assets/prod-1-gallery-1.jpg",
+                    "assets/prod-1-gallery-2.jpg",
+                    "assets/prod-1-gallery-3.jpg",
+                    "assets/prod-1-gallery-4.jpg"
+                ],
+                overview_zh: "V-Sword系列不锈钢电缆固定夹采用316L船用级不锈钢制造，具有优异的耐磨性、耐候性、耐腐蚀性和耐高温性能。紧凑型设计使其在电缆桥架上占用最小空间，同时提供强大的短路电流约束能力。产品通过IEC 61914标准认证，适用于石油天然气、石化、船舶等工业领域。",
+                overview_en: "The V-Sword series stainless steel cable cleats are manufactured in marine-grade 316L stainless steel, offering excellent abrasion, weathering, corrosion and temperature resistance. The compact design minimizes space on cable ladders while providing strong short-circuit restraint. Certified to IEC 61914 standard, suitable for oil & gas, petrochemical and marine industries.",
+                types: [
+                    {img: "assets/prod-1-type-stcc-v.jpg", name_zh: "STCC-V 三芯固定夹", name_en: "STCC-V Trefoil Cleat"},
+                    {img: "assets/prod-1-type-stcc-d.jpg", name_zh: "STCC-D 双芯固定夹", name_en: "STCC-D Double Cleat"},
+                    {img: "assets/prod-1-type-stcc-s.jpg", name_zh: "STCC-S 单芯固定夹", name_en: "STCC-S Single Cleat"}
+                ],
+                detail: {
+                    intro_zh: "V-Sword系列不锈钢电缆固定夹采用316L船用级不锈钢制造，具有优异的耐磨性、耐候性、耐腐蚀性和耐高温性能。紧凑型设计使其在电缆桥架上占用最小空间，同时提供强大的短路电流约束能力。产品通过IEC 61914标准认证，适用于石油天然气、石化、船舶等工业领域。",
+                    intro_en: "The V-Sword series stainless steel cable cleats are manufactured in marine-grade 316L stainless steel, offering excellent abrasion, weathering, corrosion and temperature resistance. The compact design minimizes space on cable ladders while providing strong short-circuit restraint. Certified to IEC 61914 standard, suitable for oil & gas, petrochemical and marine industries.",
+                    types: [
+                        {
+                            img: "assets/prod-1-type-stcc-v.jpg",
+                            table_img: "assets/cleat-stcc-v-table.jpg",
+                            name_zh: "STCC-V 三芯固定夹",
+                            name_en: "STCC-V Trefoil Cleat",
+                            desc_zh: "三芯（品字形）电缆固定夹，适用于三芯电缆以trefoil方式排列。单个固定夹可同时固定三根电缆，适合中高压三芯电力电缆系统。",
+                            desc_en: "Trefoil cable cleat designed for three-core cables arranged in trefoil formation. Single cleat holds three cables simultaneously, suitable for medium/high voltage three-core power cable systems.",
+                            specs_zh: [
+                                {label: "电缆直径范围", value: "17mm - 107mm"},
+                                {label: "短路电流能力", value: "最高135kA峰值 / 55kA RMS"},
+                                {label: "材质", value: "316L船用不锈钢"},
+                                {label: "工作温度", value: "-40°C ~ 105°C"}
+                            ],
+                            specs_en: [
+                                {label: "Cable Diameter", value: "17mm - 107mm"},
+                                {label: "Short Circuit Rating", value: "Up to 135kA peak / 55kA RMS"},
+                                {label: "Material", value: "316L Marine Grade SS"},
+                                {label: "Operating Temp", value: "-40°C ~ 105°C"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-1-type-stcc-d.jpg",
+                            table_img: "assets/cleat-stcc-d-table.jpg",
+                            name_zh: "STCC-D 双芯固定夹",
+                            name_en: "STCC-D Double Cleat",
+                            desc_zh: "双芯电缆固定夹，适用于两根电缆平行排列。适用于直流系统、控制电缆或需要双根并列敷设的场合。",
+                            desc_en: "Double cable cleat designed for two cables installed in parallel. Suitable for DC systems, control cables or applications requiring dual-cable installation.",
+                            specs_zh: [
+                                {label: "电缆直径范围", value: "17mm - 107mm"},
+                                {label: "短路电流能力", value: "最高135kA峰值 / 55kA RMS"},
+                                {label: "材质", value: "316L船用不锈钢"},
+                                {label: "工作温度", value: "-40°C ~ 105°C"}
+                            ],
+                            specs_en: [
+                                {label: "Cable Diameter", value: "17mm - 107mm"},
+                                {label: "Short Circuit Rating", value: "Up to 135kA peak / 55kA RMS"},
+                                {label: "Material", value: "316L Marine Grade SS"},
+                                {label: "Operating Temp", value: "-40°C ~ 105°C"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-1-type-stcc-s.jpg",
+                            table_img: "assets/cleat-stcc-s-table.jpg",
+                            name_zh: "STCC-S 单芯固定夹",
+                            name_en: "STCC-S Single Cleat",
+                            desc_zh: "单芯电缆固定夹，适用于单根电缆敷设。是最常用的电缆固定方式，适合单芯电力电缆、控制电缆和信号电缆。",
+                            desc_en: "Single cable cleat designed for individual cable installation. The most commonly used type for single-core power cables, control cables and signal cables.",
+                            specs_zh: [
+                                {label: "电缆直径范围", value: "28mm - 144mm"},
+                                {label: "短路电流能力", value: "最高135kA峰值 / 55kA RMS"},
+                                {label: "材质", value: "316L船用不锈钢"},
+                                {label: "工作温度", value: "-40°C ~ 105°C"}
+                            ],
+                            specs_en: [
+                                {label: "Cable Diameter", value: "28mm - 144mm"},
+                                {label: "Short Circuit Rating", value: "Up to 135kA peak / 55kA RMS"},
+                                {label: "Material", value: "316L Marine Grade SS"},
+                                {label: "Operating Temp", value: "-40°C ~ 105°C"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定电缆类型", desc: "确认使用的是单芯还是多芯电缆，以及电缆外径尺寸。"},
+                        {title: "确定电缆排列方式", desc: "对于单芯电缆，确认是水平排列还是品字形（trefoil）排列。"},
+                        {title: "确定短路电流", desc: "了解系统的可用短路电流（RMS或峰值），以选择足够强度的固定夹。"},
+                        {title: "安装注意事项", desc: "弯曲半径应为电缆直径的8-12倍，弯头处固定夹间距不超过0.3米。详细安装规范请参考产品安装指南。"}
+                    ],
+                    selection_en: [
+                        {title: "Identify Cable Type", desc: "Determine whether single-core or multi-core cables are used, and the cable outer diameter."},
+                        {title: "Determine Cable Arrangement", desc: "For single-core cables, confirm flat formation or trefoil arrangement."},
+                        {title: "Know Short Circuit Current", desc: "Understand the available short circuit current (RMS or peak) to select appropriate cleat strength."},
+                        {title: "Installation Notes", desc: "Bend radius should be 8-12 times cable diameter. Cleat spacing at bends should not exceed 0.3m. Refer to installation guide for detailed specs."}
+                    ]
+                }
+            },
+            {
+                id: 2,
+                img: "assets/product-terminal-lugs-new.png",
+                name_zh: "接线端子与连接器",
+                name_en: "Terminal Lugs & Connectors",
+                desc_zh: "全系列接线端子，包括环形、叉形、管形、插簧连接器等，铜镀锡材质。",
+                desc_en: "Full range of terminal lugs including ring, spade, tubular, quick-connect types. Tin-plated copper material.",
+                gallery: [
+                    "assets/product-terminal-lugs-new.png",
+                    "assets/prod-2-gallery-1.jpg",
+                    "assets/prod-2-gallery-2.jpg",
+                    "assets/prod-2-gallery-3.jpg",
+                    "assets/prod-2-gallery-4.jpg"
+                ],
+                overview_zh: "接线端子与连接器系列产品采用高纯度铜材制造，表面镀锡处理，具有优异的导电性能和抗腐蚀能力。产品涵盖环形端子、叉形端子、管形端子、插簧连接器、接续管、针型端子等多种类型，满足不同电气连接需求。",
+                overview_en: "Our terminal lugs and connectors are made from high-purity copper with tin plating, offering excellent conductivity and corrosion resistance. The range includes ring, spade, tubular, quick-connect, butt splice and pin terminals to meet various electrical connection requirements.",
+                types: [
+                    {img: "assets/prod-2-type-ring.jpg", name_zh: "环形端子", name_en: "Ring Terminal"},
+                    {img: "assets/prod-2-type-spade.jpg", name_zh: "叉形端子", name_en: "Spade Terminal"},
+                    {img: "assets/prod-2-type-tubular.jpg", name_zh: "管形端子", name_en: "Tubular Lug"},
+                    {img: "assets/prod-2-type-connector.jpg", name_zh: "插簧连接器", name_en: "Quick-Connect"},
+                    {img: "assets/prod-2-type-splice.jpg", name_zh: "接续管", name_en: "Butt Splice"},
+                    {img: "assets/prod-2-type-pin.jpg", name_zh: "针型端子", name_en: "Pin Terminal"}
+                ],
+                detail: {
+                    intro_zh: "接线端子与连接器系列产品采用高纯度铜材制造，表面镀锡处理，具有优异的导电性能和抗腐蚀能力。产品涵盖环形端子、叉形端子、针型端子、插簧连接器、接续管、管形端子等多种类型，提供PVC绝缘、尼龙绝缘、热缩绝缘和无绝缘等多种选择，满足不同电气连接需求。符合UL、CSA、CE等国际标准。",
+                    intro_en: "Our terminal lugs and connectors are made from high-purity copper with tin plating, offering excellent conductivity and corrosion resistance. The range includes ring, spade, pin terminals, quick-connect disconnectors, butt splices and tubular lugs, with vinyl, nylon, heat shrink and non-insulated options to meet various electrical connection requirements. Compliant with UL, CSA, CE and other international standards.",
+                    types: [
+                        {
+                            img: "assets/prod-2-type-ring.jpg",
+                            table_img: "assets/prod2-ring-nylon-double.jpg",
+                            name_zh: "环形端子",
+                            name_en: "Ring Terminal",
+                            desc_zh: "环形端子通过螺栓固定，连接最可靠，适用于永久性或半永久性连接。提供PVC单扣、PVC双扣、尼龙单扣、尼龙双扣、热缩绝缘和无绝缘多种选择。导线范围0.5-325mm²，螺栓规格#2至15/16英寸。",
+                            desc_en: "Ring terminals are bolted connections providing the most reliable connection. Available in vinyl single crimp, vinyl double crimp, nylon single crimp, nylon double crimp, heat shrink and non-insulated versions. Wire range 0.5-325mm², stud size #2 to 15/16 inch.",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.5mm² ~ 325mm² (22AWG ~ 600MCM)"},
+                                {label: "螺栓规格", value: "#2 ~ 15/16 inch (M2 ~ M24)"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "绝缘类型", value: "PVC / 尼龙 / 热缩 / 无绝缘"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.5mm² ~ 325mm² (22AWG ~ 600MCM)"},
+                                {label: "Stud Size", value: "#2 ~ 15/16 inch (M2 ~ M24)"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Insulation", value: "Vinyl / Nylon / Heat Shrink / None"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-2-type-spade.jpg",
+                            table_img: "assets/prod2-overview-types.jpg",
+                            name_zh: "叉形端子",
+                            name_en: "Spade Terminal",
+                            desc_zh: "叉形端子安装拆卸方便，无需完全拆除螺栓，适合需要频繁维护和检修的场合。包含标准叉形、锁扣叉形和法兰叉形三种类型，多种绝缘方式可选。",
+                            desc_en: "Spade terminals allow easy installation and removal without fully removing the bolt. Ideal for applications requiring frequent maintenance. Includes standard spade, locking spade and flange spade types with various insulation options.",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "螺栓规格", value: "#4 ~ 5/16 inch"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "类型", value: "标准型 / 锁扣型 / 法兰型"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "Stud Size", value: "#4 ~ 5/16 inch"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Type", value: "Standard / Locking / Flange"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-2-type-tubular.jpg",
+                            table_img: "assets/prod2-ring-noninsulated.jpg",
+                            name_zh: "无绝缘环形端子",
+                            name_en: "Non-Insulated Ring Terminal",
+                            desc_zh: "无绝缘环形端子采用焊接接缝工艺制造，结构坚固，适用于高温环境和对绝缘要求不高的场合。导线范围0.5-325mm²，大电流应用首选。",
+                            desc_en: "Non-insulated ring terminals feature brazed seam construction for rugged durability. Ideal for high temperature environments and applications where insulation is not required. Wire range 0.5-325mm², preferred for high current applications.",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.5mm² ~ 325mm² (22AWG ~ 600MCM)"},
+                                {label: "螺栓规格", value: "#4 ~ 3/4 inch"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "工艺", value: "焊接接缝 (Brazed Seam)"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.5mm² ~ 325mm² (22AWG ~ 600MCM)"},
+                                {label: "Stud Size", value: "#4 ~ 3/4 inch"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Construction", value: "Brazed Seam"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-2-type-pin.jpg",
+                            table_img: "assets/prod2-insulation-types.jpg",
+                            name_zh: "针型端子",
+                            name_en: "Pin Terminal",
+                            desc_zh: "针型端子适用于需要插入式连接的场合，如端子排、接线板等。提供PVC绝缘和尼龙绝缘两种选择，导线范围0.2-95mm²。",
+                            desc_en: "Pin terminals are designed for plug-in connections such as terminal blocks and distribution boards. Available in vinyl and nylon insulation. Wire range 0.2-95mm².",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.2mm² ~ 95mm² (26AWG ~ 3/0AWG)"},
+                                {label: "插片宽度", value: "1.4mm ~ 12.5mm"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "绝缘类型", value: "PVC / 尼龙"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.2mm² ~ 95mm² (26AWG ~ 3/0AWG)"},
+                                {label: "Pin Width", value: "1.4mm ~ 12.5mm"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Insulation", value: "Vinyl / Nylon"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-2-type-connector.jpg",
+                            table_img: "assets/prod2-size-charts.jpg",
+                            name_zh: "插簧连接器",
+                            name_en: "Disconnectors",
+                            desc_zh: "插簧连接器系列包含公插簧(MD)、母插簧(FD)、公子弹型(MP)、母子弹型(FR)、骑插型(PBD)和旗型(FLD)等多种类型，快速插拔，安装便捷。",
+                            desc_en: "The disconnector range includes male (MD), female (FD), male bullet (MP), female bullet (FR), piggyback (PBD) and flag (FLD) types. Quick connect/disconnect for easy installation.",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "插片规格", value: "110 / 187 / 205 / 250 / 312 / 375系列"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "类型", value: "公/母 / 子弹型 / 骑插型 / 旗型"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "Tab Size", value: "110 / 187 / 205 / 250 / 312 / 375 Series"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Type", value: "Male/Female / Bullet / Piggyback / Flag"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-2-type-splice.jpg",
+                            table_img: "assets/prod2-ring-heat-shrink.jpg",
+                            name_zh: "接续管",
+                            name_en: "Butt Splice",
+                            desc_zh: "接续管用于两根导线的直线连接，提供绝缘和非绝缘两种类型。热缩型接续管具有防水密封特性，适用于户外和潮湿环境。",
+                            desc_en: "Butt splices are used for in-line conductor connections. Available in insulated and non-insulated versions. Heat shrink splices offer waterproof sealing for outdoor and humid environments.",
+                            specs_zh: [
+                                {label: "导线范围", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "材质", value: "高纯度铜，镀锡处理"},
+                                {label: "绝缘类型", value: "PVC / 尼龙 / 热缩"},
+                                {label: "特性", value: "防水/密封（热缩型）"},
+                                {label: "标准", value: "UL / CSA / CE"}
+                            ],
+                            specs_en: [
+                                {label: "Wire Range", value: "0.5mm² ~ 6mm² (22AWG ~ 10AWG)"},
+                                {label: "Material", value: "High-Purity Copper, Tin-Plated"},
+                                {label: "Insulation", value: "Vinyl / Nylon / Heat Shrink"},
+                                {label: "Feature", value: "Waterproof / Sealed (Heat Shrink)"},
+                                {label: "Standard", value: "UL / CSA / CE"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定导线规格", desc: "确认导线的截面积（AWG或mm²），选择匹配的端子型号。参考导线规格表。"},
+                        {title: "确定安装方式", desc: "根据安装需求选择环形端子（螺栓固定）、叉形端子（快拆）、插簧连接器（插拔式）或接续管（直线连接）。"},
+                        {title: "确定螺栓/插片规格", desc: "确认接线端子的螺栓孔径或插片尺寸，确保与安装匹配。"},
+                        {title: "选择绝缘类型", desc: "根据应用环境选择PVC绝缘（经济型）、尼龙绝缘（耐高温150°C）、热缩绝缘（防水密封）或无绝缘（高温环境）。"},
+                        {title: "压接工艺", desc: "使用匹配的压接模具，确保压接质量符合标准要求。双扣型端子需压接绝缘套和导线两部分。"}
+                    ],
+                    selection_en: [
+                        {title: "Identify Wire Size", desc: "Determine the conductor cross-section (AWG or mm²) to select matching terminal size. Refer to wire size chart."},
+                        {title: "Determine Stud Size", desc: "Check the stud hole diameter to ensure compatibility with mounting bolt."},
+                        {title: "Choose Insulation Type", desc: "Select PVC insulated, heat shrink or non-insulated based on application environment."},
+                        {title: "Crimping Process", desc: "Use matching crimping dies to ensure crimp quality meets standard requirements."}
+                    ]
+                }
+            },
+            {
+                id: 3,
+                img: "assets/product-ss-cable-ties-new.png",
+                name_zh: "不锈钢扎带",
+                name_en: "Stainless Steel Cable Ties",
+                desc_zh: "304/316不锈钢扎带，球锁、梯锁、翼锁等多种类型，适用于户外和恶劣环境。",
+                desc_en: "304/316 stainless steel cable ties in ball lock, ladder lock, wing lock types. For outdoor and harsh environments.",
+                gallery: [
+                    "assets/product-ss-cable-ties-new.png",
+                    "assets/prod-3-gallery-1.jpg",
+                    "assets/prod-3-gallery-2.jpg",
+                    "assets/prod-3-gallery-3.jpg",
+                    "assets/prod-3-gallery-4.jpg"
+                ],
+                overview_zh: "不锈钢扎带采用优质304或316不锈钢制造，具有优异的耐腐蚀性和耐高温性能。适用于石油化工、船舶、电力等户外和恶劣环境下的电缆绑扎和固定。",
+                overview_en: "Stainless steel cable ties are made from high-quality 304 or 316 stainless steel, offering excellent corrosion resistance and high temperature performance. Ideal for outdoor and harsh environment applications in petrochemical, marine and power industries.",
+                types: [
+                    {img: "assets/prod-3-type-ball-lock.jpg", name_zh: "球锁型", name_en: "Ball Lock"},
+                    {img: "assets/prod-3-type-ladder-lock.jpg", name_zh: "梯锁型", name_en: "Ladder Lock"},
+                    {img: "assets/prod-3-type-wing-lock.jpg", name_zh: "翼锁型", name_en: "Wing Lock"},
+                    {img: "assets/prod-3-type-releasable.jpg", name_zh: "可释放型", name_en: "Releasable"},
+                    {img: "assets/prod-3-type-double-ball.jpg", name_zh: "双球锁型", name_en: "Double Ball Lock"}
+                ],
+                detail: {
+                    intro_zh: "不锈钢扎带采用优质304或316不锈钢制造，具有优异的耐腐蚀性和耐高温性能。适用于石油化工、船舶、电力等户外和恶劣环境下的电缆绑扎和固定。有球锁、梯锁、翼锁等多种锁型，以及环氧涂层、PVC涂层等表面处理可选。",
+                    intro_en: "Stainless steel cable ties are made from high-quality 304 or 316 stainless steel, offering excellent corrosion resistance and high temperature performance. Ideal for outdoor and harsh environment applications in petrochemical, marine and power industries. Available in ball lock, ladder lock, wing lock types with epoxy, PVC and other coatings.",
+                    types: [
+                        {
+                            img: "assets/prod-3-type-ball-lock.jpg",
+                            table_img: "assets/prod3-ball-table.jpg",
+                            name_zh: "球锁型",
+                            name_en: "Ball Lock Type",
+                            desc_zh: "球锁型是最常用的不锈钢扎带类型，自锁设计，安装快速方便。适用于一般工业电缆绑扎。",
+                            desc_en: "Ball lock is the most common type of stainless steel cable tie with self-locking design for fast and easy installation. Suitable for general industrial cable bundling.",
+                            specs_zh: [
+                                {label: "材质", value: "304 / 316不锈钢"},
+                                {label: "带宽", value: "4.6mm / 7.9mm / 12mm"},
+                                {label: "长度", value: "100mm ~ 1200mm"},
+                                {label: "抗拉强度", value: "最高1120N"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "304 / 316 Stainless Steel"},
+                                {label: "Width", value: "4.6mm / 7.9mm / 12mm"},
+                                {label: "Length", value: "100mm ~ 1200mm"},
+                                {label: "Tensile Strength", value: "Up to 1120N"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-3-type-ladder-lock.jpg",
+                            table_img: "assets/prod3-ladder-table.jpg",
+                            name_zh: "梯锁型",
+                            name_en: "Ladder Lock Type",
+                            desc_zh: "梯锁型采用扁平低剖面设计，安装方便。适用于需要低剖面和多次调整的场合。",
+                            desc_en: "Ladder lock type features a flat, low-profile head for easy application. Suitable for applications requiring low profile and multiple adjustments.",
+                            specs_zh: [
+                                {label: "材质", value: "304 / 316不锈钢"},
+                                {label: "带宽", value: "7mm ~ 16mm"},
+                                {label: "长度", value: "150mm ~ 1500mm"},
+                                {label: "抗拉强度", value: "最高1120N"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "304 / 316 Stainless Steel"},
+                                {label: "Width", value: "7mm ~ 16mm"},
+                                {label: "Length", value: "150mm ~ 1500mm"},
+                                {label: "Tensile Strength", value: "Up to 1120N"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-3-type-wing-lock.jpg",
+                            table_img: "assets/prod3-wing-table.jpg",
+                            name_zh: "翼锁型",
+                            name_en: "Wing Lock Type",
+                            desc_zh: "翼锁型采用翼形头部设计，无需工具即可手动安装和拆卸。适用于需要频繁调整的场合。",
+                            desc_en: "Wing lock type features a wing-shaped head for tool-less manual installation and removal. Suitable for applications requiring frequent adjustments.",
+                            specs_zh: [
+                                {label: "材质", value: "304 / 316不锈钢"},
+                                {label: "带宽", value: "4.6mm ~ 8mm"},
+                                {label: "长度", value: "150mm ~ 900mm"},
+                                {label: "抗拉强度", value: "最高540N"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "304 / 316 Stainless Steel"},
+                                {label: "Width", value: "4.6mm ~ 8mm"},
+                                {label: "Length", value: "150mm ~ 900mm"},
+                                {label: "Tensile Strength", value: "Up to 540N"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "选择材质", desc: "根据环境腐蚀性选择304或316不锈钢。盐雾环境建议用316。"},
+                        {title: "选择锁型", desc: "球锁型通用，梯锁型低剖面，翼锁型可手动调整。"},
+                        {title: "确定尺寸", desc: "根据电缆束直径选择带宽和长度，确保绑扎后有足够余量。"},
+                        {title: "涂层选择", desc: "户外或腐蚀性环境建议选环氧涂层或PVC涂层产品。"}
+                    ],
+                    selection_en: [
+                        {title: "Select Material", desc: "Choose 304 or 316 stainless steel based on environment corrosivity. Use 316 for salt spray environments."},
+                        {title: "Select Lock Type", desc: "Ball lock general purpose, ladder lock low profile, wing lock adjustable."},
+                        {title: "Determine Size", desc: "Select width and length based on cable bundle diameter, ensuring sufficient extra length."},
+                        {title: "Coating Options", desc: "Choose epoxy or PVC coated for outdoor or corrosive environments."}
+                    ]
+                }
+            },
+            {
+                id: 4,
+                img: "assets/product-nylon-cable-ties-new.png",
+                name_zh: "尼龙扎带",
+                name_en: "Nylon Cable Ties",
+                desc_zh: "自锁式尼龙扎带，UL认证，多种规格，适用于常规电缆绑扎。",
+                desc_en: "Self-locking nylon cable ties, UL certified, various sizes for standard cable bundling.",
+                gallery: [
+                    "assets/product-nylon-cable-ties-new.png",
+                    "assets/prod-4-gallery-1.jpg",
+                    "assets/prod-4-gallery-2.jpg",
+                    "assets/prod-4-gallery-3.jpg"
+                ],
+                overview_zh: "尼龙扎带采用优质尼龙66材料制造，具有良好的韧性和抗老化性能。UL认证产品，适用于室内和常规环境下的电缆绑扎和整理。",
+                overview_en: "Nylon cable ties are made from premium nylon 66 material with excellent toughness and anti-aging properties. UL certified products for indoor and standard environment cable bundling.",
+                types: [
+                    {img: "assets/prod-4-type-self-locking.jpg", name_zh: "自锁式扎带", name_en: "Self-Locking Tie"},
+                    {img: "assets/prod-4-type-tags.jpg", name_zh: "标签及配件", name_en: "Tags & Accessories"}
+                ],
+                detail: {
+                    intro_zh: "尼龙扎带采用优质尼龙66材料制造，具有良好的韧性和抗老化性能。UL认证产品，适用于室内和常规环境下的电缆绑扎和整理。有多种颜色和规格可选。",
+                    intro_en: "Nylon cable ties are made from premium nylon 66 material with excellent toughness and anti-aging properties. UL certified products for indoor and standard environment cable bundling. Available in various colors and sizes.",
+                    types: [
+                        {
+                            img: "assets/prod-4-type-self-locking.jpg",
+                            table_img: "assets/prod4-table.jpg",
+                            name_zh: "自锁式扎带",
+                            name_en: "Self-Locking Cable Tie",
+                            desc_zh: "自锁式设计，使用方便快捷。是最常用的电缆绑扎产品，适用于室内电气安装和日常维护。",
+                            desc_en: "Self-locking design for convenient and fast use. The most commonly used cable bundling product for indoor electrical installation and maintenance.",
+                            specs_zh: [
+                                {label: "材质", value: "尼龙66 (PA66)"},
+                                {label: "长度范围", value: "60mm ~ 1200mm"},
+                                {label: "带宽", value: "2.5mm ~ 9mm"},
+                                {label: "工作温度", value: "-20°C ~ 85°C"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Nylon 66 (PA66)"},
+                                {label: "Length Range", value: "60mm ~ 1200mm"},
+                                {label: "Width", value: "2.5mm ~ 9mm"},
+                                {label: "Operating Temp", value: "-20°C ~ 85°C"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-4-type-tags.jpg",
+                            table_img: "assets/prod4-tags.jpg",
+                            name_zh: "标签及配件",
+                            name_en: "Cable Tags & Accessories",
+                            desc_zh: "尼龙电缆标签用于标识和标记电缆束，提供快速有效的电缆管理和识别方案。",
+                            desc_en: "Nylon cable tags provide a quick and effective method of identifying and marking cable bundles for cable management.",
+                            specs_zh: [
+                                {label: "材质", value: "尼龙66 (PA66)"},
+                                {label: "类型", value: "旗型标签/平标签"},
+                                {label: "颜色", value: "白色/黄色/其他"},
+                                {label: "应用", value: "电缆标识和管理"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Nylon 66 (PA66)"},
+                                {label: "Type", value: "Flag / Flat Tags"},
+                                {label: "Color", value: "White / Yellow / Others"},
+                                {label: "Application", value: "Cable Identification & Management"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定绑扎直径", desc: "测量电缆束的最大直径，选择合适的扎带长度。"},
+                        {title: "选择带宽", desc: "根据绑扎强度需求选择2.5mm到9mm不同带宽。"},
+                        {title: "工作温度", desc: "尼龙扎带适用温度-20°C到85°C，超出范围请选不锈钢扎带。"},
+                        {title: "颜色选择", desc: "标准为自然色，可按需求提供黑色、红色、蓝色等。"}
+                    ],
+                    selection_en: [
+                        {title: "Determine Bundle Diameter", desc: "Measure the maximum cable bundle diameter and select appropriate tie length."},
+                        {title: "Select Width", desc: "Choose width from 2.5mm to 9mm based on required bundling strength."},
+                        {title: "Operating Temperature", desc: "Nylon ties work from -20°C to 85°C. Use stainless steel ties for extreme temperatures."},
+                        {title: "Color Options", desc: "Natural color standard. Black, red, blue and other colors available on request."}
+                    ]
+                }
+            },
+            {
+                id: 5,
+                img: "assets/product-hose-clamps-new2.png",
+                name_zh: "快卸喉箍",
+                name_en: "Quick Release Hose Clamps",
+                desc_zh: "Quicker+系列快卸喉箍，304不锈钢，快速安装和拆卸。",
+                desc_en: "Quicker+ series quick release hose clamps, 304 stainless steel, fast installation and removal.",
+                gallery: [
+                    "assets/product-hose-clamps-new2.png",
+                    "assets/prod-5-gallery-1.jpg",
+                    "assets/prod-5-gallery-2.jpg"
+                ],
+                overview_zh: "Quicker+系列快卸喉箍采用304不锈钢制造，具有快速安装和拆卸的特点。适用于需要频繁调整和维护的管路连接场合。",
+                overview_en: "Quicker+ series quick release hose clamps are made of 304 stainless steel with fast installation and removal features. Ideal for piping connections requiring frequent adjustment and maintenance.",
+                types: [
+                    {img: "assets/prod-5-type-standard.jpg", name_zh: "Quicker+ 标准型", name_en: "Quicker+ Standard"},
+                    {img: "assets/prod-5-type-heavy-duty.jpg", name_zh: "Quicker+ 重型型", name_en: "Quicker+ Heavy Duty"}
+                ],
+                detail: {
+                    intro_zh: "Quicker+系列快卸喉箍采用304不锈钢制造，具有快速安装和拆卸的特点。适用于需要频繁调整和维护的管路连接场合。无需专用工具，单手即可操作。",
+                    intro_en: "Quicker+ series quick release hose clamps are made of 304 stainless steel with fast installation and removal features. Ideal for piping connections requiring frequent adjustment and maintenance. Tool-less, one-hand operation.",
+                    types: [
+                        {
+                            img: "assets/prod-5-type-standard.jpg",
+                            table_img: "assets/prod5-features.jpg",
+                            name_zh: "Quicker+ 标准型",
+                            name_en: "Quicker+ Standard",
+                            desc_zh: "标准型快卸喉箍，适用于一般管径范围和中等压力应用。安装拆卸快速方便。",
+                            desc_en: "Standard quick release hose clamp for general pipe diameters and medium pressure applications. Fast and easy installation and removal.",
+                            specs_zh: [
+                                {label: "材质", value: "304不锈钢"},
+                                {label: "带宽", value: "9mm"},
+                                {label: "管径范围", value: "10mm ~ 100mm"},
+                                {label: "特点", value: "快速释放设计"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "304 Stainless Steel"},
+                                {label: "Band Width", value: "9mm"},
+                                {label: "Diameter Range", value: "10mm ~ 100mm"},
+                                {label: "Feature", value: "Quick Release Design"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-5-type-heavy-duty.jpg",
+                            table_img: "assets/prod5-features.jpg",
+                            name_zh: "Quicker+ 重型型",
+                            name_en: "Quicker+ Heavy Duty",
+                            desc_zh: "重型型快卸喉箍，采用更宽带宽和更强结构，适用于大管径和高压力应用。",
+                            desc_en: "Heavy duty quick release hose clamp with wider band and stronger structure for large diameters and high pressure applications.",
+                            specs_zh: [
+                                {label: "材质", value: "304不锈钢"},
+                                {label: "带宽", value: "12mm"},
+                                {label: "管径范围", value: "30mm ~ 150mm"},
+                                {label: "特点", value: "重型结构设计"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "304 Stainless Steel"},
+                                {label: "Band Width", value: "12mm"},
+                                {label: "Diameter Range", value: "30mm ~ 150mm"},
+                                {label: "Feature", value: "Heavy Duty Structure"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "测量管径", desc: "测量软管或管道的外径，选择匹配的喉箍尺寸范围。"},
+                        {title: "确定压力等级", desc: "根据系统压力选择标准型或重型喉箍。"},
+                        {title: "材质选择", desc: "标准304不锈钢，腐蚀性环境可选316不锈钢。"},
+                        {title: "安装注意", desc: "确保喉箍完全覆盖软管接头，拧紧后确认密封良好。"}
+                    ],
+                    selection_en: [
+                        {title: "Measure Pipe OD", desc: "Measure the hose or pipe outer diameter to select matching clamp size range."},
+                        {title: "Determine Pressure Rating", desc: "Choose standard or heavy duty based on system pressure requirements."},
+                        {title: "Material Selection", desc: "Standard 304 stainless steel. 316 available for corrosive environments."},
+                        {title: "Installation Notes", desc: "Ensure clamp fully covers hose fitting. Check seal after tightening."}
+                    ]
+                }
+            },
+            {
+                id: 6,
+                img: "assets/product-conduit-fittings-new.png",
+                name_zh: "导管及配件",
+                name_en: "Conduit & Fittings",
+                desc_zh: "美标导管及穿线盒配件，Type C/LB/LL/LR等多种类型。",
+                desc_en: "UL listed conduit and conduit bodies in Type C, LB, LL, LR styles.",
+                gallery: [
+                    "assets/product-conduit-fittings-new.png",
+                    "assets/prod-6-gallery-1.jpg",
+                    "assets/prod-6-gallery-2.jpg",
+                    "assets/prod-6-gallery-3.jpg",
+                    "assets/prod-6-gallery-4.jpg"
+                ],
+                overview_zh: "导管及配件系列产品符合美标UL标准，提供Type C、Type LB、Type LL、Type LR等多种穿线盒型号，以及配套的导管接头和配件。适用于北美标准电气安装系统。",
+                overview_en: "Our conduit and fittings comply with UL standards, offering Type C, LB, LL, LR conduit bodies along with compatible connectors and fittings. Designed for North American standard electrical installation systems.",
+                types: [
+                    {img: "assets/prod-6-type-type-c.jpg", name_zh: "Type C 穿线盒", name_en: "Type C Body"},
+                    {img: "assets/prod-6-type-type-lb.jpg", name_zh: "Type LB 穿线盒", name_en: "Type LB Body"},
+                    {img: "assets/prod-6-type-type-ll.jpg", name_zh: "Type LL 穿线盒", name_en: "Type LL Body"},
+                    {img: "assets/prod-6-type-type-lr.jpg", name_zh: "Type LR 穿线盒", name_en: "Type LR Body"}
+                ],
+                detail: {
+                    intro_zh: "导管及配件系列产品符合美标UL标准，由可锻铸铁制造，热镀锌处理。提供Type C、Type LB、Type LL、Type LR等多种穿线盒型号，以及配套的导管接头和配件。适用于北美标准电气安装系统。",
+                    intro_en: "Our conduit and fittings comply with UL standards, manufactured from malleable iron with hot-dip galvanized finish. Offering Type C, LB, LL, LR conduit bodies along with compatible connectors and fittings. Designed for North American standard electrical installation systems.",
+                    types: [
+                        {
+                            img: "assets/prod-6-type-type-c.jpg",
+                            table_img: "assets/prod6-type-c-lb-table.jpg",
+                            name_zh: "Type C 穿线盒",
+                            name_en: "Type C Conduit Body",
+                            desc_zh: "直通型穿线盒，用于导管直线段的检查和穿线。两个接口在同一直线上。",
+                            desc_en: "Through-type conduit body for inspection and pulling in straight conduit runs. Both openings are in a straight line.",
+                            specs_zh: [
+                                {label: "材质", value: "可锻铸铁"},
+                                {label: "表面处理", value: "热镀锌"},
+                                {label: "尺寸范围", value: "1/2 inch ~ 4 inch"},
+                                {label: "标准", value: "UL Listed"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Malleable Iron"},
+                                {label: "Finish", value: "Hot-Dip Galvanized"},
+                                {label: "Size Range", value: "1/2 inch ~ 4 inch"},
+                                {label: "Standard", value: "UL Listed"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-6-type-type-lb.jpg",
+                            table_img: "assets/prod6-type-c-lb-table.jpg",
+                            name_zh: "Type LB 穿线盒",
+                            name_en: "Type LB Conduit Body",
+                            desc_zh: "直角弯头型，从一侧进、从底部出，用于导管向下90度转弯。",
+                            desc_en: "90° elbow type, enters one side and exits bottom, for downward 90° conduit turns.",
+                            specs_zh: [
+                                {label: "材质", value: "可锻铸铁"},
+                                {label: "表面处理", value: "热镀锌"},
+                                {label: "尺寸范围", value: "1/2 inch ~ 4 inch"},
+                                {label: "标准", value: "UL Listed"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Malleable Iron"},
+                                {label: "Finish", value: "Hot-Dip Galvanized"},
+                                {label: "Size Range", value: "1/2 inch ~ 4 inch"},
+                                {label: "Standard", value: "UL Listed"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-6-type-type-ll.jpg",
+                            table_img: "assets/prod6-type-ll-lr-table.jpg",
+                            name_zh: "Type LL 穿线盒",
+                            name_en: "Type LL Conduit Body",
+                            desc_zh: "左弯型，从一侧进、从另一侧左转弯，用于水平向左90度转弯。",
+                            desc_en: "Left turn type, enters one side and exits left, for horizontal 90° left turns.",
+                            specs_zh: [
+                                {label: "材质", value: "可锻铸铁"},
+                                {label: "表面处理", value: "热镀锌"},
+                                {label: "尺寸范围", value: "1/2 inch ~ 4 inch"},
+                                {label: "标准", value: "UL Listed"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Malleable Iron"},
+                                {label: "Finish", value: "Hot-Dip Galvanized"},
+                                {label: "Size Range", value: "1/2 inch ~ 4 inch"},
+                                {label: "Standard", value: "UL Listed"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-6-type-type-lr.jpg",
+                            table_img: "assets/prod6-type-ll-lr-table.jpg",
+                            name_zh: "Type LR 穿线盒",
+                            name_en: "Type LR Conduit Body",
+                            desc_zh: "右弯型，从一侧进、从另一侧右转弯，用于水平向右90度转弯。",
+                            desc_en: "Right turn type, enters one side and exits right, for horizontal 90° right turns.",
+                            specs_zh: [
+                                {label: "材质", value: "可锻铸铁"},
+                                {label: "表面处理", value: "热镀锌"},
+                                {label: "尺寸范围", value: "1/2 inch ~ 4 inch"},
+                                {label: "标准", value: "UL Listed"}
+                            ],
+                            specs_en: [
+                                {label: "Material", value: "Malleable Iron"},
+                                {label: "Finish", value: "Hot-Dip Galvanized"},
+                                {label: "Size Range", value: "1/2 inch ~ 4 inch"},
+                                {label: "Standard", value: "UL Listed"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定导管尺寸", desc: "根据导线截面积和数量选择合适的导管尺寸（1/2 inch到4 inch）。"},
+                        {title: "确定转弯方向", desc: "根据管路走向选择Type C（直通）、LB（下弯）、LL（左弯）、LR（右弯）。"},
+                        {title: "确认安装环境", desc: "室内外环境选择镀锌材质，潮湿环境建议做密封处理。"},
+                        {title: "配套配件", desc: "需要配套的导管接头、锁紧螺母、垫片等配件一起订购。"}
+                    ],
+                    selection_en: [
+                        {title: "Determine Conduit Size", desc: "Select conduit size (1/2 inch to 4 inch) based on conductor cross-section and quantity."},
+                        {title: "Determine Turn Direction", desc: "Choose Type C (through), LB (down), LL (left), LR (right) based on routing direction."},
+                        {title: "Verify Environment", desc: "Galvanized for indoor/outdoor. Use sealing gaskets for wet locations."},
+                        {title: "Matching Fittings", desc: "Order compatible couplings, locknuts and bushings together."}
+                    ]
+                }
+            },
+            {
+                id: 9,
+                img: "assets/product-sunshades.png",
+                name_zh: "GRP遮阳棚",
+                name_en: "GRP Sunshades",
+                desc_zh: "玻璃钢材质仪表遮阳棚，保护现场仪表免受阳光直射和恶劣天气影响。",
+                desc_en: "GRP instrument sunshades protect field instruments from direct sunlight and harsh weather conditions.",
+                gallery: [
+                    "assets/product-sunshades.png",
+                    "assets/prod9-sunshade-p1.jpg",
+                    "assets/prod9-sunshade-p2.jpg",
+                    "assets/prod9-sunshade-p3.jpg",
+                    "assets/prod9-sunshade-p4.jpg",
+                    "assets/prod9-sunshade-p5.jpg"
+                ],
+                overview_zh: "GRP（玻璃纤维增强塑料）遮阳棚专为现场仪表设计，有效保护仪表免受阳光直射、雨淋和极端温度影响。采用3mm厚GRP材质，重量轻、耐腐蚀、耐紫外线。提供多种安装方式和尺寸规格，适用于石油天然气、石化、化工等工业现场。",
+                overview_en: "GRP (Glass Reinforced Plastic) sunshades are specifically designed for field instruments, protecting them from direct sunlight, rain and extreme temperatures. Made of 3mm thick GRP, they are lightweight, corrosion-resistant and UV-stable. Multiple mounting types and sizes available, suitable for oil & gas, petrochemical and chemical industrial sites.",
+                types: [
+                    {img: "assets/prod9-sunshade-p1.jpg", name_zh: "DD1-DD2 仪表遮阳棚", name_en: "DD1-DD2 Instrument Sunshades"},
+                    {img: "assets/prod9-sunshade-p2.jpg", name_zh: "DD3-DD4 仪表遮阳棚", name_en: "DD3-DD4 Instrument Sunshades"},
+                    {img: "assets/prod9-sunshade-p3.jpg", name_zh: "DD5-DD6 探测器遮阳棚", name_en: "DD5-DD6 Detector Sunshades"},
+                    {img: "assets/prod9-sunshade-p4.jpg", name_zh: "DD7-DD8 仪表遮阳棚", name_en: "DD7-DD8 Instrument Sunshades"},
+                    {img: "assets/prod9-sunshade-p5.jpg", name_zh: "DD9 仪表遮阳棚", name_en: "DD9 Instrument Sunshade"}
+                ],
+                detail: {
+                    intro_zh: "GRP仪表遮阳棚采用3mm厚玻璃钢（玻璃纤维增强塑料）材质制造，具有优异的耐腐蚀性、耐紫外线和轻质高强特性。设计用于保护现场安装的压力变送器、温度仪表、流量计等仪表设备，防止阳光直射导致的测量误差和设备老化，同时提供防雨防护。配套SS316不锈钢U型螺栓和安装支架，安装简便。",
+                    intro_en: "GRP instrument sunshades are manufactured from 3mm thick glass reinforced plastic, offering excellent corrosion resistance, UV stability and high strength-to-weight ratio. Designed to protect field-mounted pressure transmitters, temperature instruments, flow meters and other devices from direct sunlight (preventing measurement errors and aging) and rain. Supplied with SS316 stainless steel U-bolts and mounting brackets for easy installation.",
+                    types: [
+                        {
+                            img: "assets/prod9-sunshade-p1.jpg",
+                            table_img: "assets/prod9-sunshade-p1.jpg",
+                            name_zh: "DD1 / DD2 仪表遮阳棚",
+                            name_en: "DD1 / DD2 Instrument Sunshade",
+                            desc_zh: "Type-A仪表遮阳棚，DD1为后安装式，DD2为侧安装式。尺寸L300×W250×D100×Thk3mm。适用于常规仪表安装。",
+                            desc_en: "Type-A instrument sunshades. DD1 = back mount, DD2 = side mount. Size L300×W250×D100×Thk3mm. Suitable for standard instrument installation.",
+                            specs_zh: [
+                                {label: "型号", value: "DD1（后安装）/ DD2（侧安装）"},
+                                {label: "尺寸", value: "L300×W250×D100mm"},
+                                {label: "厚度", value: "3mm GRP"},
+                                {label: "安装方式", value: "2寸管径U型螺栓固定"},
+                                {label: "配套螺栓", value: "UB1: M5×30L SS316"}
+                            ],
+                            specs_en: [
+                                {label: "Model", value: "DD1 (Back Mount) / DD2 (Side Mount)"},
+                                {label: "Dimensions", value: "L300×W250×D100mm"},
+                                {label: "Thickness", value: "3mm GRP"},
+                                {label: "Mounting", value: "U-bolt on 2 inch NPS pipe"},
+                                {label: "Bolt Set", value: "UB1: M5×30L SS316"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod9-sunshade-p2.jpg",
+                            table_img: "assets/prod9-sunshade-p2.jpg",
+                            name_zh: "DD3 / DD4 仪表遮阳棚",
+                            name_en: "DD3 / DD4 Instrument Sunshade",
+                            desc_zh: "Type-B和Type-C仪表遮阳棚，后安装式。DD3尺寸L350×W250×D100mm，DD4尺寸L300×W350×D100mm。",
+                            desc_en: "Type-B and Type-C instrument sunshades, back mount. DD3 size L350×W250×D100mm, DD4 size L300×W350×D100mm.",
+                            specs_zh: [
+                                {label: "型号", value: "DD3（Type-B）/ DD4（Type-C）"},
+                                {label: "尺寸", value: "DD3: L350×W250×D100mm / DD4: L300×W350×D100mm"},
+                                {label: "厚度", value: "3mm GRP"},
+                                {label: "安装方式", value: "2寸管径U型螺栓固定"},
+                                {label: "配套螺栓", value: "UB1: M5×30L SS316"}
+                            ],
+                            specs_en: [
+                                {label: "Model", value: "DD3 (Type-B) / DD4 (Type-C)"},
+                                {label: "Dimensions", value: "DD3: L350×W250×D100mm / DD4: L300×W350×D100mm"},
+                                {label: "Thickness", value: "3mm GRP"},
+                                {label: "Mounting", value: "U-bolt on 2 inch NPS pipe"},
+                                {label: "Bolt Set", value: "UB1: M5×30L SS316"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod9-sunshade-p3.jpg",
+                            table_img: "assets/prod9-sunshade-p3.jpg",
+                            name_zh: "DD5 / DD6 探测器遮阳棚",
+                            name_en: "DD5 / DD6 Detector Sunshade",
+                            desc_zh: "Type-D和Type-E火焰气体探测器遮阳棚，底安装式。DD5小尺寸L250×W250×H100mm，DD6大尺寸L350×W250×H100mm。",
+                            desc_en: "Type-D and Type-E fire & gas detector sunshades, bottom mount. DD5 small size L250×W250×H100mm, DD6 large size L350×W250×H100mm.",
+                            specs_zh: [
+                                {label: "型号", value: "DD5（Type-D小）/ DD6（Type-E大）"},
+                                {label: "尺寸", value: "DD5: L250×W250×H100mm / DD6: L350×W250×H100mm"},
+                                {label: "厚度", value: "3mm GRP"},
+                                {label: "安装方式", value: "SS316L平板+U型带+硅胶垫"},
+                                {label: "适用设备", value: "火焰探测器、气体探测器"}
+                            ],
+                            specs_en: [
+                                {label: "Model", value: "DD5 (Type-D Small) / DD6 (Type-E Large)"},
+                                {label: "Dimensions", value: "DD5: L250×W250×H100mm / DD6: L350×W250×H100mm"},
+                                {label: "Thickness", value: "3mm GRP"},
+                                {label: "Mounting", value: "SS316L flat bar + U-band + silicone pad"},
+                                {label: "Application", value: "Flame detectors, gas detectors"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod9-sunshade-p4.jpg",
+                            table_img: "assets/prod9-sunshade-p4.jpg",
+                            name_zh: "DD7 / DD8 仪表遮阳棚",
+                            name_en: "DD7 / DD8 Instrument Sunshade",
+                            desc_zh: "Type-F顶安装式和Type-C后安装式遮阳棚。DD7顶安装L350×W250×D100mm，DD8后安装L300×W350×D100mm。",
+                            desc_en: "Type-F top mount and Type-C back mount sunshades. DD7 top mount L350×W250×D100mm, DD8 back mount L300×W350×D100mm.",
+                            specs_zh: [
+                                {label: "型号", value: "DD7（Type-F顶装）/ DD8（Type-C后装）"},
+                                {label: "尺寸", value: "DD7: L350×W250×D100mm / DD8: L300×W350×D100mm"},
+                                {label: "厚度", value: "3mm GRP"},
+                                {label: "安装方式", value: "2寸管径U型螺栓固定"},
+                                {label: "配套螺栓", value: "UB1: M5×30L / UB2: M10×30L SS316"}
+                            ],
+                            specs_en: [
+                                {label: "Model", value: "DD7 (Type-F Top) / DD8 (Type-C Back)"},
+                                {label: "Dimensions", value: "DD7: L350×W250×D100mm / DD8: L300×W350×D100mm"},
+                                {label: "Thickness", value: "3mm GRP"},
+                                {label: "Mounting", value: "U-bolt on 2 inch NPS pipe"},
+                                {label: "Bolt Set", value: "UB1: M5×30L / UB2: M10×30L SS316"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod9-sunshade-p5.jpg",
+                            table_img: "assets/prod9-sunshade-p5.jpg",
+                            name_zh: "DD9 仪表遮阳棚",
+                            name_en: "DD9 Instrument Sunshade",
+                            desc_zh: "Type-H带安装支架B的仪表遮阳棚，后安装式。尺寸L300×W250×D100mm，配UB2型U型螺栓。",
+                            desc_en: "Type-H instrument sunshade with mounting bracket B, back mount. Size L300×W250×D100mm, supplied with UB2 U-bolt.",
+                            specs_zh: [
+                                {label: "型号", value: "DD9（Type-H + 支架B）"},
+                                {label: "尺寸", value: "L300×W250×D100mm"},
+                                {label: "厚度", value: "3mm GRP"},
+                                {label: "安装方式", value: "2寸管径U型螺栓+支架B"},
+                                {label: "配套螺栓", value: "UB2: M10×30L SS316"}
+                            ],
+                            specs_en: [
+                                {label: "Model", value: "DD9 (Type-H + Bracket B)"},
+                                {label: "Dimensions", value: "L300×W250×D100mm"},
+                                {label: "Thickness", value: "3mm GRP"},
+                                {label: "Mounting", value: "U-bolt + Bracket B on 2 inch NPS pipe"},
+                                {label: "Bolt Set", value: "UB2: M10×30L SS316"}
+                            ]
+                },
+            ],
+            selection_zh: [
+                {title: "确定仪表类型", desc: "根据需要保护的仪表类型选择：常规变送器用DD1-DD4/DD7-DD9，火焰气体探测器用DD5/DD6。"},
+                {title: "确定安装方式", desc: "根据现场安装条件选择后安装、侧安装、底安装或顶安装方式。"},
+                {title: "确认尺寸", desc: "根据仪表外形尺寸选择合适的遮阳棚规格，确保完全覆盖仪表。"},
+                {title: "安装管径", desc: "确认安装管柱直径为2英寸NPS，配套U型螺栓固定。"},
+                {title: "材质确认", desc: "标准为3mm厚GRP玻璃钢，颜色为白色。如需特殊颜色或尺寸请联系我们定制。"}
+            ],
+            selection_en: [
+                {title: "Identify Instrument Type", desc: "Choose based on instrument: standard transmitters use DD1-DD4/DD7-DD9, flame/gas detectors use DD5/DD6."},
+                {title: "Determine Mounting Type", desc: "Select back mount, side mount, bottom mount or top mount based on site conditions."},
+                {title: "Confirm Dimensions", desc: "Select appropriate size based on instrument outline dimensions for full coverage."},
+                {title: "Pipe Size", desc: "Standard mounting on 2 inch NPS pipe with U-bolt fixing."},
+                {title: "Material Confirmation", desc: "Standard: 3mm thick GRP, white color. Contact us for custom colors or sizes."}
+            ]
+        }
+    },
+    {
+                id: 7,
+                img: "assets/product-p-clip-clamps-new.png",
+                name_zh: "P型管夹",
+                name_en: "P-Clip Clamps",
+                desc_zh: "橡胶/PVC内衬P型管夹，减振降噪，适用于管路和电缆固定。",
+                desc_en: "Rubber/PVC lined P-clips for vibration damping, suitable for tubing and cable support.",
+                gallery: [
+                    "assets/product-p-clip-clamps-new.png",
+                    "assets/prod-7-gallery-1.jpg",
+                    "assets/prod-7-gallery-2.jpg",
+                    "assets/prod-7-gallery-3.jpg"
+                ],
+                overview_zh: "P型管夹采用金属框架加橡胶或PVC内衬设计，具有减振降噪和保护管路表面的功能。适用于液压管路、气动管路和电缆的固定安装。",
+                overview_en: "P-clip clamps feature a metal frame with rubber or PVC liner for vibration damping and surface protection. Ideal for hydraulic lines, pneumatic tubing and cable installation.",
+                types: [
+                    {img: "assets/prod-7-type-rubber-lined.jpg", name_zh: "橡胶内衬型", name_en: "Rubber Lined"},
+                    {img: "assets/prod-7-type-pvc-lined.jpg", name_zh: "PVC内衬型", name_en: "PVC Lined"}
+                ],
+                detail: {
+                    intro_zh: "Alpha+系列P型管夹采用金属框架加橡胶或PVC内衬设计，具有减振降噪和保护管路表面的功能。适用于液压管路、气动管路和电缆的固定安装。不锈钢或镀锌钢带宽，多种内衬材质可选。",
+                    intro_en: "Alpha+ series P-clip clamps feature a metal frame with rubber or PVC liner for vibration damping and surface protection. Ideal for hydraulic lines, pneumatic tubing and cable installation. Available in stainless steel or galvanized steel band with various liner materials.",
+                    types: [
+                        {
+                            img: "assets/prod-7-type-rubber-lined.jpg",
+                            table_img: "assets/prod7-table.jpg",
+                            name_zh: "橡胶内衬型",
+                            name_en: "Rubber Lined P-Clip",
+                            desc_zh: "NBR橡胶内衬，适用于液压管路和需要减振降噪的场合。耐油性能好。",
+                            desc_en: "NBR rubber liner for hydraulic lines and applications requiring vibration damping and noise reduction. Good oil resistance.",
+                            specs_zh: [
+                                {label: "带宽材质", value: "不锈钢 / 镀锌钢"},
+                                {label: "内衬材质", value: "NBR橡胶"},
+                                {label: "管径范围", value: "6mm ~ 80mm"},
+                                {label: "工作温度", value: "-40°C ~ 120°C"}
+                            ],
+                            specs_en: [
+                                {label: "Band Material", value: "Stainless / Galvanized Steel"},
+                                {label: "Liner Material", value: "NBR Rubber"},
+                                {label: "Tube Diameter", value: "6mm ~ 80mm"},
+                                {label: "Operating Temp", value: "-40°C ~ 120°C"}
+                            ]
+                        },
+                        {
+                            img: "assets/prod-7-type-pvc-lined.jpg",
+                            table_img: "assets/prod7-table.jpg",
+                            name_zh: "PVC内衬型",
+                            name_en: "PVC Lined P-Clip",
+                            desc_zh: "PVC内衬，适用于一般电缆和轻型管路固定，经济实用。",
+                            desc_en: "PVC liner for general cable and light-duty tubing support. Economical and practical.",
+                            specs_zh: [
+                                {label: "带宽材质", value: "不锈钢 / 镀锌钢"},
+                                {label: "内衬材质", value: "PVC"},
+                                {label: "管径范围", value: "6mm ~ 80mm"},
+                                {label: "工作温度", value: "-20°C ~ 80°C"}
+                            ],
+                            specs_en: [
+                                {label: "Band Material", value: "Stainless / Galvanized Steel"},
+                                {label: "Liner Material", value: "PVC"},
+                                {label: "Tube Diameter", value: "6mm ~ 80mm"},
+                                {label: "Operating Temp", value: "-20°C ~ 80°C"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定管径", desc: "测量管路或电缆的外径，选择匹配的管夹尺寸。"},
+                        {title: "选择内衬材质", desc: "液压/油管用NBR橡胶，一般电缆用PVC内衬。"},
+                        {title: "选择带宽材质", desc: "室内干燥环境用镀锌钢，户外/腐蚀性环境用不锈钢。"},
+                        {title: "安装注意", desc: "确保管夹与管路完全贴合，螺栓扭矩符合要求。"}
+                    ],
+                    selection_en: [
+                        {title: "Determine Tube Size", desc: "Measure tube or cable outer diameter to select matching clip size."},
+                        {title: "Select Liner Material", desc: "NBR rubber for hydraulic/oil lines. PVC for general cable applications."},
+                        {title: "Select Band Material", desc: "Galvanized steel for indoor dry. Stainless steel for outdoor/corrosive."},
+                        {title: "Installation Notes", desc: "Ensure full contact between clip and tube. Follow bolt torque requirements."}
+                    ]
+                }
+            },
+            {
+                id: 8,
+                img: "assets/product-cable-glands.png",
+                name_zh: "电缆接头",
+                name_en: "Cable Glands",
+                desc_zh: "尼龙电缆接头，公制和PG螺纹，IP68防护等级。",
+                desc_en: "Nylon cable glands in metric and PG threads, IP68 protection rating.",
+                gallery: [
+                    "assets/product-cable-glands.png",
+                    "assets/prod8-spec-table.jpg"
+                ],
+                overview_zh: "电缆接头系列产品采用尼龙6材质，玻璃纤维增强，无卤耐紫外线。提供公制（M12-M63）和PG螺纹（9PG-21PG）两种规格，IP68防护等级，适用于各种工业电气设备的电缆引入密封。",
+                overview_en: "Cable glands are manufactured from polyamide 6 with glass fiber reinforcement, halogen-free and UV resistant. Available in metric (M12-M63) and PG threads (9PG-21PG), IP68 protection rating. Suitable for cable entry sealing in various industrial electrical equipment.",
+                types: [
+                    {img: "assets/product-cable-glands.png", name_zh: "公制电缆接头", name_en: "Metric Cable Gland"},
+                    {img: "assets/product-cable-glands.png", name_zh: "PG电缆接头", name_en: "PG Cable Gland"}
+                ],
+                detail: {
+                    intro_zh: "电缆接头（Cable Gland）是用于密封和固定电缆穿过设备外壳的装置，同时提供防尘防水防护。本系列采用尼龙6材质，玻璃纤维增强，无卤耐紫外线。符合DIN VDE 0619标准，IP68防护等级（5 bar）。提供公制和PG两种螺纹规格，多种颜色可选。",
+                    intro_en: "Cable glands are devices used to seal and secure cables passing through equipment enclosures, while providing dust and water protection. This series is made from polyamide 6 with glass fiber reinforcement, halogen-free and UV resistant. Compliant with DIN VDE 0619, IP68 protection rating (5 bar). Available in metric and PG thread types, multiple color options.",
+                    types: [
+                        {
+                            img: "assets/product-cable-glands.png",
+                            table_img: "assets/prod8-spec-table.jpg",
+                            name_zh: "公制电缆接头",
+                            name_en: "Metric Cable Gland",
+                            desc_zh: "公制螺纹电缆接头，规格M12至M63，完整配锁母和密封圈。适用于符合IEC标准的工业设备。",
+                            desc_en: "Metric thread cable glands, sizes M12 to M63, supplied complete with locknut and body seal. Suitable for IEC standard industrial equipment.",
+                            specs_zh: [
+                                {label: "螺纹规格", value: "M12 / M16 / M20 / M25 / M32 / M40 / M50 / M63"},
+                                {label: "电缆外径范围", value: "4mm ~ 42mm"},
+                                {label: "材质", value: "尼龙6 + 玻璃纤维增强"},
+                                {label: "防护等级", value: "IP68 (5 bar)"},
+                                {label: "标准", value: "DIN VDE 0619"}
+                            ],
+                            specs_en: [
+                                {label: "Thread Size", value: "M12 / M16 / M20 / M25 / M32 / M40 / M50 / M63"},
+                                {label: "Cable OD Range", value: "4mm ~ 42mm"},
+                                {label: "Material", value: "Polyamide 6 + Glass Fiber Reinforced"},
+                                {label: "Protection Rating", value: "IP68 (5 bar)"},
+                                {label: "Standard", value: "DIN VDE 0619"}
+                            ]
+                        },
+                        {
+                            img: "assets/product-cable-glands.png",
+                            table_img: "assets/prod8-spec-table.jpg",
+                            name_zh: "PG电缆接头",
+                            name_en: "PG Cable Gland",
+                            desc_zh: "PG螺纹电缆接头，规格9PG至21PG。适用于符合DIN标准的欧洲设备。需单独配锁母。",
+                            desc_en: "PG thread cable glands, sizes 9PG to 21PG. Suitable for DIN standard European equipment. Locknuts sold separately.",
+                            specs_zh: [
+                                {label: "螺纹规格", value: "9PG / 11PG / 13.5PG / 16PG / 21PG"},
+                                {label: "电缆外径范围", value: "4mm ~ 18mm"},
+                                {label: "材质", value: "尼龙6 + 玻璃纤维增强"},
+                                {label: "防护等级", value: "IP68 (5 bar)"},
+                                {label: "标准", value: "DIN VDE 0619"}
+                            ],
+                            specs_en: [
+                                {label: "Thread Size", value: "9PG / 11PG / 13.5PG / 16PG / 21PG"},
+                                {label: "Cable OD Range", value: "4mm ~ 18mm"},
+                                {label: "Material", value: "Polyamide 6 + Glass Fiber Reinforced"},
+                                {label: "Protection Rating", value: "IP68 (5 bar)"},
+                                {label: "Standard", value: "DIN VDE 0619"}
+                            ]
+                        }
+                    ],
+                    selection_zh: [
+                        {title: "确定电缆外径", desc: "测量电缆的外径范围，选择匹配的接头夹紧范围。"},
+                        {title: "确定螺纹规格", desc: "根据设备开孔选择公制（M系列）或PG螺纹，确认螺纹尺寸匹配。"},
+                        {title: "选择材质颜色", desc: "标准黑色，可选灰色、白色、红色。根据设备外观和环境要求选择。"},
+                        {title: "防护要求", desc: "确认应用环境的防护等级要求，IP68适用于户外和潮湿环境。"},
+                        {title: "安装注意", desc: "确保密封圈与电缆和外壳良好贴合，拧紧扭矩符合要求以保证密封性能。"}
+                    ],
+                    selection_en: [
+                        {title: "Identify Cable OD", desc: "Measure cable outer diameter range to select matching gland clamping range."},
+                        {title: "Determine Thread Type", desc: "Choose metric (M series) or PG thread based on equipment hole size. Confirm thread compatibility."},
+                        {title: "Select Color", desc: "Standard black, available in gray, white and red. Choose based on equipment appearance and environment."},
+                        {title: "Protection Requirements", desc: "Confirm environmental protection rating requirements. IP68 for outdoor and humid environments."},
+                        {title: "Installation Notes", desc: "Ensure proper seal contact with cable and enclosure. Follow torque requirements for sealing performance."}
+                    ]
+                }
+            },
+        ];
+
+        // ===== News Data =====
+        const articles = [
+            {
+                id: 1,
+                img: "assets/product-cable-cleats-new2.png",
+                date: "2024-03-15",
+                title_zh: "电缆固定夹选型指南：单芯、三芯与双芯的区别",
+                title_en: "Cable Cleat Selection Guide: Single, Trefoil and Double",
+                excerpt_zh: "电缆固定夹是电气系统中保护电缆安全的关键部件。本文介绍单芯、三芯和双芯电缆固定夹的选型要点。",
+                excerpt_en: "Cable cleats are critical components for cable protection in electrical systems. This article covers selection guidelines for single, trefoil and double cleats.",
+                content_zh: `<p>电缆固定夹（Cable Cleat）是用于将电缆固定在电缆桥架或线槽上的装置，其主要功能是在正常运行和短路故障期间约束电缆的位移。正确选择电缆固定夹对于电气系统的安全运行至关重要。</p><h3>单芯电缆固定夹（Single Cleat）</h3><p>单芯固定夹用于固定单根电缆，是最常用的类型。适用于单芯电力电缆、控制电缆和信号电缆。选择时需考虑电缆外径、短路电流和安装间距等因素。</p><h3>三芯（品字形）固定夹（Trefoil Cleat）</h3><p>三芯固定夹将三根电缆以品字形排列固定，适用于中高压三芯电力电缆系统。这种排列方式可以平衡三相磁场，减少涡流损耗。</p><h3>双芯固定夹（Double Cleat）</h3><p>双芯固定夹用于固定两根平行排列的电缆，适用于直流系统或需要双根并列敷设的场合。</p><h3>选型要点</h3><p>1. 确定电缆类型和外径<br>2. 确定电缆排列方式（单根、双根或三芯）<br>3. 了解系统短路电流等级<br>4. 选择符合相应标准的产品（如IEC 61914）</p>`,
+                content_en: `<p>Cable cleats are devices used to secure cables to cable trays or ladders. Their primary function is to restrain cable movement during normal operation and short-circuit faults. Proper selection of cable cleats is essential for safe electrical system operation.</p><h3>Single Cable Cleat</h3><p>Single cleats hold one cable each and are the most commonly used type. Suitable for single-core power cables, control cables and signal cables. Consider cable OD, short circuit current and installation spacing when selecting.</p><h3>Trefoil Cleat</h3><p>Trefoil cleats hold three cables in a triangular arrangement, suitable for medium/high voltage three-core power cable systems. This arrangement balances three-phase magnetic fields and reduces eddy current losses.</p><h3>Double Cleat</h3><p>Double cleats hold two cables installed in parallel, suitable for DC systems or applications requiring dual-cable installation.</p><h3>Selection Tips</h3><p>1. Identify cable type and outer diameter<br>2. Determine cable arrangement (single, double or trefoil)<br>3. Know the system short circuit current rating<br>4. Select products complying with relevant standards (e.g. IEC 61914)</p>`
+            },
+            {
+                id: 2,
+                img: "assets/product-ss-cable-ties-new.png",
+                date: "2024-02-20",
+                title_zh: "不锈钢扎带在海上平台与船舶中的应用",
+                title_en: "Stainless Steel Cable Ties in Offshore & Marine Applications",
+                excerpt_zh: "海上平台和船舶环境对绑扎材料有极高要求，不锈钢扎带因其耐腐蚀性能成为首选。",
+                excerpt_en: "Offshore platforms and marine vessels demand high-performance fastening materials. Stainless steel cable ties are the preferred choice due to their corrosion resistance.",
+                content_zh: `<p>海上平台和船舶工作环境极为恶劣，高盐雾、高湿度、紫外线照射等因素对材料的耐腐蚀性能提出了极高要求。不锈钢扎带因其优异的耐腐蚀性能和机械强度，成为海洋工程领域电缆绑扎的首选产品。</p><h3>为什么选择不锈钢扎带？</h3><p>1. 耐腐蚀性：316不锈钢在盐雾环境下具有优异的耐腐蚀性<br>2. 耐高温：可在-80°C至538°C温度范围内使用<br>3. 抗紫外线：不会因紫外线照射而老化脆裂<br>4. 长寿命：设计寿命可达20年以上</p><h3>应用场景</h3><p>- 海上平台电缆固定<br>- 船舶电气系统布线<br>- 港口码头设备安装<br>- 海上风力发电场维护</p>`,
+                content_en: `<p>Offshore platforms and marine vessels operate in extremely harsh environments. High salt spray, humidity and UV exposure place severe demands on material corrosion resistance. Stainless steel cable ties, with their excellent corrosion resistance and mechanical strength, are the preferred choice for cable bundling in marine engineering.</p><h3>Why Stainless Steel Ties?</h3><p>1. Corrosion Resistance: 316 stainless steel performs excellently in salt spray environments<br>2. High Temperature: Operates from -80°C to 538°C<br>3. UV Resistance: Will not degrade or become brittle from UV exposure<br>4. Long Lifespan: Design life of 20+ years</p><h3>Applications</h3><p>- Offshore platform cable securing<br>- Marine vessel electrical wiring<br>- Port equipment installation<br>- Offshore wind farm maintenance</p>`
+            },
+            {
+                id: 3,
+                img: "assets/product-terminal-lugs-new.png",
+                date: "2024-01-10",
+                title_zh: "接线端子类型与压接工艺要点",
+                title_en: "Terminal Lug Types & Crimping Best Practices",
+                excerpt_zh: "正确选择和压接接线端子是确保电气连接可靠性的关键。本文介绍常见端子类型和压接工艺要点。",
+                excerpt_en: "Proper terminal selection and crimping are key to reliable electrical connections. This article covers common lug types and crimping best practices.",
+                content_zh: `<p>接线端子是电气连接系统中的基础元件，其质量和压接工艺直接影响整个系统的可靠性。本文介绍常见接线端子类型和正确的压接方法。</p><h3>常见端子类型</h3><p>1. 环形端子（Ring Terminal）：通过螺栓固定，连接最可靠<br>2. 叉形端子（Spade Terminal）：安装拆卸方便，适合频繁维护场合<br>3. 管形端子（Tubular Lug）：管状设计，压接强度高<br>4. 插簧端子（Quick-Connect）：快速插拔，适合低压信号连接</p><h3>压接工艺要点</h3><p>1. 选择与端子规格匹配的压接模具<br>2. 确保导线完全插入端子套管底部<br>3. 压接位置居中，压接深度一致<br>4. 压接后进行拉力测试和电压降测试</p>`,
+                content_en: `<p>Terminal lugs are fundamental components in electrical connection systems. Their quality and crimping process directly affect overall system reliability. This article covers common terminal types and proper crimping methods.</p><h3>Common Lug Types</h3><p>1. Ring Terminal: Bolted connection, most reliable<br>2. Spade Terminal: Easy installation/removal, ideal for maintenance access<br>3. Tubular Lug: Tubular design, high crimp strength<br>4. Quick-Connect: Fast pluggable, for low-voltage signal connections</p><h3>Crimping Best Practices</h3><p>1. Use crimping dies matching the lug specification<br>2. Ensure conductor fully inserted to the barrel bottom<br>3. Center crimp position, uniform crimp depth<br>4. Perform pull test and voltage drop test after crimping</p>`
+            },
+            {
+                id: 4,
+                img: "assets/product-conduit-fittings-new.png",
+                date: "2023-12-05",
+                title_zh: "北美标准导管及配件安装指南",
+                title_en: "North American Standard Conduit Installation Guide",
+                excerpt_zh: "了解Type C、LB、LL、LR等穿线盒的区别和应用场景，正确选择导管配件。",
+                excerpt_en: "Understand the differences between Type C, LB, LL, LR conduit bodies and their applications for proper fitting selection.",
+                content_zh: `<p>在北美电气安装标准中，导管系统（Conduit System）是保护电缆的重要方式。穿线盒（Conduit Body）用于导管线路的转弯、分支和检查维护。</p><h3>常见穿线盒类型</h3><p>1. Type C：直通型，用于导管直线段的检查和穿线<br>2. Type LB：直角弯头型，从一侧进、从底部出（90度向下转弯）<br>3. Type LL：左弯型，从一侧进、从另一侧左转弯（90度水平左弯）<br>4. Type LR：右弯型，从一侧进、从另一侧右转弯（90度水平右弯）</p><h3>安装注意事项</h3><p>- 穿线盒尺寸应足够容纳导线弯曲线圈<br>- 所有连接处需拧紧并做密封处理<br>- 根据使用环境选择金属或PVC材质<br>- 符合NEC（美国国家电气规范）相关要求</p>`,
+                content_en: `<p>In North American electrical installation standards, conduit systems are essential for cable protection. Conduit bodies provide access points for pulling, splicing and inspection.</p><h3>Common Conduit Body Types</h3><p>1. Type C: Through type, for straight runs inspection and pulling<br>2. Type LB: 90° elbow, enters one side, exits bottom (downward turn)<br>3. Type LL: Left turn, enters one side, exits left (90° horizontal left)<br>4. Type LR: Right turn, enters one side, exits right (90° horizontal right)</p><h3>Installation Notes</h3><p>- Conduit body size must accommodate conductor bend radius<br>- All connections must be tight and sealed as required<br>- Choose metal or PVC based on environment<br>- Comply with NEC (National Electrical Code) requirements</p>`
+            },
+            {
+                id: 5,
+                img: "assets/product-p-clip-clamps-new.png",
+                date: "2023-11-18",
+                title_zh: "P型管夹的减振应用与选型要点",
+                title_en: "P-Clip Vibration Applications & Selection Guide",
+                excerpt_zh: "P型管夹通过橡胶内衬实现减振降噪，广泛应用于液压和气动管路系统。",
+                excerpt_en: "P-clips provide vibration damping through rubber liners, widely used in hydraulic and pneumatic tubing systems.",
+                content_zh: `<p>P型管夹（P-Clip）是一种常用的管路和电缆固定件，其特点是金属框架内部衬有橡胶或PVC材料，起到减振、降噪和保护管路表面的作用。</p><h3>减振原理</h3><p>橡胶内衬可以吸收管路系统中的振动能量，减少管路之间的摩擦和噪音传递。在液压系统中，压力脉动引起的管路振动是常见问题，使用带橡胶内衬的P型管夹可以有效解决。</p><h3>选型要点</h3><p>1. 确定管路外径，选择匹配的管夹尺寸<br>2. 根据温度和介质选择橡胶材质（NBR/EPDM/硅胶等）<br>3. 根据安装空间选择带宽和固定孔间距<br>4. 考虑是否需要UL/CSA认证</p><h3>典型应用</h3><p>- 液压管路固定<br>- 气动管路安装<br>- 电缆和线束固定<br>- 汽车和船舶制造</p>`,
+                content_en: `<p>P-clips are common fasteners for tubing and cable support. They feature a metal frame with rubber or PVC liner that provides vibration damping, noise reduction and surface protection.</p><h3>Vibration Damping Principle</h3><p>The rubber liner absorbs vibration energy from piping systems, reducing friction and noise transmission between lines. In hydraulic systems, pressure pulsations causing pipe vibration is a common issue. Rubber-lined P-clips effectively solve this problem.</p><h3>Selection Guide</h3><p>1. Determine tube OD and select matching clip size<br>2. Choose rubber material based on temperature and media (NBR/EPDM/Silicone)<br>3. Select band width and mounting hole spacing based on space<br>4. Consider UL/CSA certification requirements</p><h3>Typical Applications</h3><p>- Hydraulic line securing<br>- Pneumatic tubing installation<br>- Cable and wire harness fixing<br>- Automotive and marine manufacturing</p>`
+            }
+        ];
+
+        // ===== Language Data =====
+        let currentLang = 'en';
+
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_about: "About Us",
+                nav_products: "Products",
+                nav_apps: "Applications",
+                nav_news: "News",
+                nav_contact: "Contact",
+                hero_title: "Electrical Bulk Integration Manufacturer",
+                hero_subtitle: "One-stop supplier of cable cleats, cable ties, terminal lugs and conduit fittings for industrial applications",
+                hero_cta: "Explore Products",
+                hero_cta2: "Contact Us",
+                about_tag: "About Us",
+                about_title: "Reliable Electrical Accessories Manufacturer",
+                about_subtitle: "Shanghai JJW Electric and Instrument Engineering Co., Ltd. is a professional manufacturer and supplier of electrical and instrumentation products, serving customers worldwide.",
+                about_h3: "Who We Are",
+                about_p1: "JJW Electric and Instrument Engineering Limited is a manufacturer and developer offering high-performance clamping, fastening, and bundling products to diverse markets. Our main products include stainless steel cable ties, stainless steel cable cleats, nylon cable ties, cable terminals, and more.",
+                about_p2: "With our rolling factory located in Ningbo, Zhejiang Province, we provide high-quality products and customized solutions to customers in oil & gas, petrochemical, pharmaceutical, marine, and railway industries worldwide.",
+                stat1: "Years Experience",
+                stat2: "Products Models",
+                stat3: "Countries Served",
+                stat4: "Certified Quality",
+                products_tag: "Products",
+                products_title: "Our Product Range",
+                products_subtitle: "We offer a comprehensive range of cable management and electrical installation products.",
+                apps_tag: "Applications",
+                apps_title: "Industries We Serve",
+                apps_subtitle: "Our products are widely used in various industries and demanding environments.",
+                app1_title: "Oil & Gas",
+                app1_desc: "Upstream, midstream and downstream facilities",
+                app2_title: "Petrochemical",
+                app2_desc: "Refineries, chemical plants and processing units",
+                app3_title: "Marine",
+                app3_desc: "Shipbuilding, offshore platforms and ports",
+                app4_title: "Power Generation",
+                app4_desc: "Power plants, substations and transmission",
+                app5_title: "Railway",
+                app5_desc: "Urban rail, high-speed rail and signaling",
+                app6_title: "Construction",
+                app6_desc: "Commercial and industrial building projects",
+                news_tag: "News",
+                news_title: "News & Insights",
+                news_subtitle: "Professional product knowledge, industry applications and technical guides.",
+                contact_tag: "Contact Us",
+                contact_title: "Get In Touch",
+                contact_subtitle: "Feel free to contact us for product inquiries, technical support or business cooperation.",
+                contact_h3: "Contact Information",
+                contact_h3_2: "Send Us a Message",
+                contact_desc: "For product catalogs, technical specifications, pricing or any inquiries, please send us an email and we will get back to you within 24 hours.",
+                contact_btn: "Send Email",
+                contact_address: "Address",
+                contact_phone: "Telephone / Fax",
+                contact_email: "Email",
+                footer_about: "About Us",
+                footer_about_link: "Company Profile",
+                footer_apps: "Applications",
+                footer_products: "Products",
+                footer_prod1: "Cable Cleats",
+                footer_prod2: "Cable Ties",
+                footer_prod3: "Terminal Lugs",
+                footer_contact: "Contact",
+                product_back: "Back to Products",
+                news_back: "Back to News",
+                modal_overview: "Product Overview",
+                modal_types: "Product Types",
+                modal_cta_text: "Need full product catalog and technical specifications? Contact us for detailed information.",
+                modal_cta_btn: "Contact Us",
+                read_more: "Read More →"
+            },
+            zh: {
+                nav_home: "首页",
+                nav_about: "关于我们",
+                nav_products: "产品中心",
+                nav_apps: "应用领域",
+                nav_news: "新闻动态",
+                nav_contact: "联系我们",
+                hero_title: "电气辅料一站式制造商",
+                hero_subtitle: "电缆固定夹、扎带、接线端子、导管配件一站式供应商，服务全球工业客户",
+                hero_cta: "浏览产品",
+                hero_cta2: "联系我们",
+                about_tag: "关于我们",
+                about_title: "值得信赖的电气辅料制造商",
+                about_subtitle: "上海喆万电器仪表工程有限公司是专业的电气仪表产品制造商和供应商，服务全球客户。",
+                about_h3: "我们是谁",
+                about_p1: "上海喆万电器仪表工程有限公司是一家专业从事高性能夹持、紧固和绑扎产品的制造企业。主要产品包括不锈钢扎带、不锈钢电缆固定夹、尼龙扎带、电缆端子等。",
+                about_p2: "我们在浙江宁波拥有生产工厂，为石油天然气、石化、制药、船舶、铁路等行业的全球客户提供高品质产品和定制解决方案。",
+                stat1: "年行业经验",
+                stat2: "产品型号",
+                stat3: "服务国家",
+                stat4: "认证品质",
+                products_tag: "产品中心",
+                products_title: "产品系列",
+                products_subtitle: "我们提供全方位的电缆管理和电气安装产品。",
+                apps_tag: "应用领域",
+                apps_title: "服务行业",
+                apps_subtitle: "我们的产品广泛应用于各行业和严苛环境。",
+                app1_title: "石油天然气",
+                app1_desc: "上游、中游和下游设施",
+                app2_title: "石油化工",
+                app2_desc: "炼油厂、化工厂和加工装置",
+                app3_title: "船舶工业",
+                app3_desc: "造船、海上平台和港口",
+                app4_title: "电力",
+                app4_desc: "发电厂、变电站和输电",
+                app5_title: "轨道交通",
+                app5_desc: "城市轨道交通、高铁和信号",
+                app6_title: "建筑工程",
+                app6_desc: "商业和工业建筑项目",
+                news_tag: "新闻动态",
+                news_title: "新闻与见解",
+                news_subtitle: "专业产品知识、行业应用和技术指南。",
+                contact_tag: "联系我们",
+                contact_title: "联系我们",
+                contact_subtitle: "如需产品咨询、技术支持或商务合作，请随时联系我们。",
+                contact_h3: "联系方式",
+                contact_h3_2: "给我们留言",
+                contact_desc: "如需产品目录、技术规格、报价或任何咨询，请发送邮件，我们将在24小时内回复。",
+                contact_btn: "发送邮件",
+                contact_address: "公司地址",
+                contact_phone: "电话 / 传真",
+                contact_email: "电子邮箱",
+                footer_about: "关于我们",
+                footer_about_link: "公司简介",
+                footer_apps: "应用领域",
+                footer_products: "产品中心",
+                footer_prod1: "电缆固定夹",
+                footer_prod2: "电缆扎带",
+                footer_prod3: "接线端子",
+                footer_contact: "联系方式",
+                product_back: "返回产品列表",
+                news_back: "返回新闻列表",
+                modal_overview: "产品概述",
+                modal_types: "产品类型",
+                modal_cta_text: "需要完整产品目录和技术参数？请联系我们获取详细资料。",
+                modal_cta_btn: "联系我们",
+                read_more: "阅读更多 →"
+            }
+        };
+
+        // ===== Render Functions =====
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = products.map(p => `
+                <div class="product-card" onclick="showProductPage(${p.id})">
+                    <div class="product-card-img">
+                        <img src="${p.img}" alt="${currentLang === 'zh' ? p.name_zh : p.name_en}">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>${currentLang === 'zh' ? p.name_zh : p.name_en}</h3>
+                        <p>${currentLang === 'zh' ? p.desc_zh : p.desc_en}</p>
+                        <span class="read-more">${translations[currentLang].read_more}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderNews() {
+            const grid = document.getElementById('newsGrid');
+            grid.innerHTML = articles.map(a => `
+                <div class="news-card" onclick="showNewsPage(${a.id})">
+                    <div class="news-card-img">
+                        <img src="${a.img}" alt="">
+                    </div>
+                    <div class="news-card-body">
+                        <div class="news-card-date">${a.date}</div>
+                        <h3>${currentLang === 'zh' ? a.title_zh : a.title_en}</h3>
+                        <p>${currentLang === 'zh' ? a.excerpt_zh : a.excerpt_en}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        let currentGalleryIdx = 0;
+        let currentProductGallery = [];
+
+        function showProductPage(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            const isZh = currentLang === 'zh';
+
+            document.getElementById('modalTitle').textContent = isZh ? product.name_zh : product.name_en;
+            document.getElementById('modalOverview').textContent = isZh ? product.overview_zh : product.overview_en;
+            document.getElementById('breadcrumb').innerHTML =
+                `<a href="#home">${translations[currentLang].nav_home}</a> / <a href="#products">${translations[currentLang].nav_products}</a> / ${isZh ? product.name_zh : product.name_en}`;
+
+            // Gallery
+            currentProductGallery = product.gallery;
+            currentGalleryIdx = 0;
+            document.getElementById('galleryMainImg').src = product.gallery[0];
+
+            const thumbsHtml = product.gallery.map((img, idx) =>
+                `<div class="gallery-thumb ${idx === 0 ? 'active' : ''}" onclick="switchGallery(${idx})">
+                    <img src="${img}" alt="">
+                </div>`
+            ).join('');
+            document.getElementById('galleryThumbs').innerHTML = thumbsHtml;
+
+            // Product Types
+            const typesGrid = document.getElementById('modalTypesGrid');
+            if (product.types && product.types.length > 0) {
+                document.getElementById('modalTypesSection').style.display = 'block';
+                typesGrid.innerHTML = product.types.map(t =>
+                    `<div class="product-type-card">
+                        <div class="product-type-img"><img src="${t.img}" alt=""></div>
+                        <div class="product-type-name">${isZh ? t.name_zh : t.name_en}</div>
+                    </div>`
+                ).join('');
+            } else {
+                document.getElementById('modalTypesSection').style.display = 'none';
+            }
+
+            // Detail section (for cable cleats)
+            const detailContent = document.getElementById('modalDetailContent');
+            if (product.detail) {
+                let html = '';
+                const d = product.detail;
+
+                html += '<div class="detail-section">';
+                html += `<h4>${isZh ? '产品详细选型' : 'Detailed Selection Guide'}</h4>`;
+                html += `<p class="detail-type-desc">${isZh ? d.intro_zh : d.intro_en}</p>`;
+                html += '</div>';
+
+                d.types.forEach(t => {
+                    html += '<div class="detail-type-block">';
+                    html += `<h5>${isZh ? t.name_zh : t.name_en}</h5>`;
+                    html += `<img class="detail-type-img" src="${t.img}" alt="">`;
+                    html += `<p class="detail-type-desc">${isZh ? t.desc_zh : t.desc_en}</p>`;
+                    html += '<div class="detail-type-specs">';
+                    const specs = isZh ? t.specs_zh : t.specs_en;
+                    specs.forEach(s => {
+                        html += `<div class="detail-spec-item">
+                            <div class="detail-spec-label">${s.label}</div>
+                            <div class="detail-spec-value">${s.value}</div>
+                        </div>`;
+                    });
+                    html += '</div>';
+                    if (t.table_img) {
+                        html += `<div class="detail-table-title">${isZh ? '型号与尺寸参数表' : 'Model & Dimension Table'}</div>`;
+                        html += `<img class="detail-table-img" src="${t.table_img}" alt="">`;
+                    }
+                    html += '</div>';
+                });
+
+                html += '<div class="detail-section">';
+                html += `<h4>${isZh ? '选型步骤' : 'Selection Steps'}</h4>`;
+                html += '<div class="selection-steps">';
+                const steps = isZh ? d.selection_zh : d.selection_en;
+                steps.forEach((step, idx) => {
+                    html += `<div class="selection-step">
+                        <div class="selection-step-num">${idx + 1}</div>
+                        <h6>${step.title}</h6>
+                        <p>${step.desc}</p>
+                    </div>`;
+                });
+                html += '</div></div>';
+
+                detailContent.innerHTML = html;
+            } else {
+                detailContent.innerHTML = '';
+            }
+
+            document.getElementById('productModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            window.scrollTo(0, 0);
+        }
+
+        function closeProductPage() {
+            document.getElementById('productModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function switchGallery(idx) {
+            currentGalleryIdx = idx;
+            document.getElementById('galleryMainImg').src = currentProductGallery[idx];
+            document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
+                t.classList.toggle('active', i === idx);
+            });
+        }
+
+        function showNewsPage(id) {
+            const article = articles.find(a => a.id === id);
+            if (!article) return;
+
+            const isZh = currentLang === 'zh';
+
+            document.getElementById('newsTitle').textContent = isZh ? article.title_zh : article.title_en;
+            document.getElementById('newsMeta').textContent = article.date;
+            document.getElementById('newsContent').innerHTML = isZh ? article.content_zh : article.content_en;
+            document.getElementById('newsBreadcrumb').innerHTML =
+                `<a href="#home">${translations[currentLang].nav_home}</a> / <a href="#news">${translations[currentLang].nav_news}</a> / ${isZh ? article.title_zh : article.title_en}`;
+
+            document.getElementById('newsModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            window.scrollTo(0, 0);
+        }
+
+        function closeNewsPage() {
+            document.getElementById('newsModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ===== Language Switch =====
+        function toggleLang() {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            applyTranslations();
+            renderProducts();
+            renderNews();
+        }
+
+        function applyTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        // ===== Smooth Scroll =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+
+        // ===== ESC Key =====
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                if (document.getElementById('productModal').classList.contains('active')) {
+                    closeProductPage();
+                }
+                if (document.getElementById('newsModal').classList.contains('active')) {
+                    closeNewsPage();
+                }
+            }
+        });
+
+        // ===== Init =====
+        document.addEventListener('DOMContentLoaded', function() {
+            currentLang = 'en';
+            renderProducts();
+            renderNews();
+            applyTranslations();
+        });
+    
+        // ===== Back to Top Button =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopBtn = document.getElementById('backToTop');
+            const productModal = document.getElementById('productModal');
+            const newsPage = document.getElementById('newsPage');
+            if (!backToTopBtn) return;
+            
+            function updateButtonVisibility() {
+                // 检查当前是否在产品详情页
+                const onProductPage = productModal && productModal.classList.contains('active');
+                const onNewsPage = newsPage && newsPage.classList.contains('active');
+                
+                if (onProductPage && productModal.scrollTop > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else if (onNewsPage && newsPage.scrollTop > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else if (!onProductPage && !onNewsPage && window.scrollY > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            }
+            
+            window.addEventListener('scroll', updateButtonVisibility);
+            if (productModal) productModal.addEventListener('scroll', updateButtonVisibility);
+            if (newsPage) newsPage.addEventListener('scroll', updateButtonVisibility);
+            
+            backToTopBtn.addEventListener('click', function() {
+                const onProductPage = productModal && productModal.classList.contains('active');
+                const onNewsPage = newsPage && newsPage.classList.contains('active');
+                
+                if (onProductPage) {
+                    productModal.scrollTo({top: 0, behavior: 'smooth'});
+                } else if (onNewsPage) {
+                    newsPage.scrollTo({top: 0, behavior: 'smooth'});
+                } else {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }
+            });
+        });
+
+    </script>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+</body>
+</html>
