@@ -2709,9 +2709,13 @@
         let currentGalleryIdx = 0;
         let currentProductGallery = [];
 
+        let savedScrollPos = 0;
         function showProductPage(id) {
             const product = products.find(p => p.id === id);
             if (!product) return;
+
+            // 记录当前滚动位置
+            savedScrollPos = window.scrollY;
 
             const isZh = currentLang === 'zh';
 
@@ -2804,6 +2808,10 @@
         function closeProductPage() {
             document.getElementById('productModal').classList.remove('active');
             document.body.style.overflow = '';
+            // 恢复之前的滚动位置
+            setTimeout(() => {
+                window.scrollTo(0, savedScrollPos);
+            }, 100);
         }
 
         function switchGallery(idx) {
@@ -2828,12 +2836,16 @@
 
             document.getElementById('newsModal').classList.add('active');
             document.body.style.overflow = 'hidden';
+            savedScrollPos = window.scrollY;
             window.scrollTo(0, 0);
         }
 
         function closeNewsPage() {
             document.getElementById('newsModal').classList.remove('active');
             document.body.style.overflow = '';
+            setTimeout(() => {
+                window.scrollTo(0, savedScrollPos);
+            }, 100);
         }
 
         // ===== Language Switch =====
