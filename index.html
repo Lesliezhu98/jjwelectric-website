@@ -2771,7 +2771,8 @@
 
         function renderNews() {
             const grid = document.getElementById('newsGrid');
-            grid.innerHTML = articles.map(a => `
+            const sortedArticles = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
+            grid.innerHTML = sortedArticles.map(a => `
                 <div class="news-card" onclick="showNewsPage(${a.id})">
                     <div class="news-card-img">
                         <img src="${a.img}" alt="">
