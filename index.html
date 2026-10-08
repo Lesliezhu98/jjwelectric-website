@@ -2753,19 +2753,33 @@
         };
 
         // ===== Render Functions =====
+        const productSlugMap = {
+            1: 'stainless-steel-cable-cleats',
+            2: 'terminal-lugs-connectors',
+            3: 'stainless-steel-cable-ties',
+            4: 'nylon-cable-ties',
+            5: 'quick-release-hose-clamps',
+            6: 'conduit-fittings',
+            9: 'grp-sunshades',
+            7: 'p-clip-clamps',
+            8: 'cable-glands',
+            10: 'instrument-stanchions',
+            11: 'lighting-series'
+        };
+
         function renderProducts() {
             const grid = document.getElementById('productsGrid');
             grid.innerHTML = products.map(p => `
-                <div class="product-card" onclick="showProductPage(${p.id})">
+                <a class="product-card" href="products/${productSlugMap[p.id] || '#'}" style="text-decoration:none;color:inherit;display:block;">
                     <div class="product-card-img">
                         <img src="${p.img}" alt="${currentLang === 'zh' ? p.name_zh : p.name_en}">
                     </div>
                     <div class="product-card-body">
                         <h3>${currentLang === 'zh' ? p.name_zh : p.name_en}</h3>
                         <p>${currentLang === 'zh' ? p.desc_zh : p.desc_en}</p>
-                        <span class="read-more">${translations[currentLang].read_more}</span>
+                        <span class="read-more">${translations[currentLang].read_more} →</span>
                     </div>
-                </div>
+                </a>
             `).join('');
         }
 
