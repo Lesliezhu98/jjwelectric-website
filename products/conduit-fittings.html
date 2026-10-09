@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -149,7 +149,7 @@
                 <div class="detail-type-block">
                     <h5>Type LB Conduit Body</h5>
                     <img class="detail-type-img" src="../assets/prod-6-type-type-lb.jpg" alt="Type LB Conduit Body" loading="lazy">
-                    <p class="detail-type-desc">90° elbow type, enters one side and exits bottom, for downward 90° conduit turns.</p>
+                    <p class="detail-type-desc">90掳 elbow type, enters one side and exits bottom, for downward 90掳 conduit turns.</p>
                     <div class="detail-type-specs">
                         <div class="detail-spec-item">
                             <div class="detail-spec-label">Material</div>
@@ -174,7 +174,7 @@
                 <div class="detail-type-block">
                     <h5>Type LL Conduit Body</h5>
                     <img class="detail-type-img" src="../assets/prod-6-type-type-ll.jpg" alt="Type LL Conduit Body" loading="lazy">
-                    <p class="detail-type-desc">Left turn type, enters one side and exits left, for horizontal 90° left turns.</p>
+                    <p class="detail-type-desc">Left turn type, enters one side and exits left, for horizontal 90掳 left turns.</p>
                     <div class="detail-type-specs">
                         <div class="detail-spec-item">
                             <div class="detail-spec-label">Material</div>
@@ -199,7 +199,7 @@
                 <div class="detail-type-block">
                     <h5>Type LR Conduit Body</h5>
                     <img class="detail-type-img" src="../assets/prod-6-type-type-lr.jpg" alt="Type LR Conduit Body" loading="lazy">
-                    <p class="detail-type-desc">Right turn type, enters one side and exits right, for horizontal 90° right turns.</p>
+                    <p class="detail-type-desc">Right turn type, enters one side and exits right, for horizontal 90掳 right turns.</p>
                     <div class="detail-type-specs">
                         <div class="detail-spec-item">
                             <div class="detail-spec-label">Material</div>
@@ -251,7 +251,7 @@
         <div class="modal-cta">
             <p>Need Conduit &amp; Fittings for your project? Send us your specifications for a quote.</p>
             <a href="mailto:leslie.zhu@jjwelectric.com" class="btn btn-primary" style="background:#1e3a5f;color:#fff;text-decoration:none;display:inline-block;padding:14px 36px;font-weight:600;border-radius:4px;">Request Quote</a>
-            <a href="../index.html#contact" style="margin-left:12px;color:#1e3a5f;font-weight:600;text-decoration:none;">Contact Us →</a>
+            <a href="../index.html#contact" style="margin-left:12px;color:#1e3a5f;font-weight:600;text-decoration:none;">Contact Us 鈫?/a>
         </div>
     </main>
 
@@ -282,8 +282,25 @@
             </div>
         </div>
         <div class="footer-bottom">
-            © 2026 JJW Electric and Instrument Engineering Limited. All rights reserved.
+            漏 2026 JJW Electric and Instrument Engineering Limited. All rights reserved.
         </div>
     </footer>
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" title="Back to top">&#8679;</button>
+    <script>
+        (function() {
+            var btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        })();
+    </script>
 </body>
 </html>

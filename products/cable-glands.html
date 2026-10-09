@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -203,7 +203,7 @@
         <div class="modal-cta">
             <p>Need Cable Glands for your project? Send us your specifications for a quote.</p>
             <a href="mailto:leslie.zhu@jjwelectric.com" class="btn btn-primary" style="background:#1e3a5f;color:#fff;text-decoration:none;display:inline-block;padding:14px 36px;font-weight:600;border-radius:4px;">Request Quote</a>
-            <a href="../index.html#contact" style="margin-left:12px;color:#1e3a5f;font-weight:600;text-decoration:none;">Contact Us →</a>
+            <a href="../index.html#contact" style="margin-left:12px;color:#1e3a5f;font-weight:600;text-decoration:none;">Contact Us 鈫?/a>
         </div>
     </main>
 
@@ -234,8 +234,25 @@
             </div>
         </div>
         <div class="footer-bottom">
-            © 2026 JJW Electric and Instrument Engineering Limited. All rights reserved.
+            漏 2026 JJW Electric and Instrument Engineering Limited. All rights reserved.
         </div>
     </footer>
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" title="Back to top">&#8679;</button>
+    <script>
+        (function() {
+            var btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        })();
+    </script>
 </body>
 </html>
