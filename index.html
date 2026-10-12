@@ -2783,20 +2783,30 @@
             `).join('');
         }
 
+        const newsSlugMap = {
+            1: 'cable-cleat-selection-guide',
+            2: 'stainless-steel-cable-ties-offshore',
+            3: 'terminal-lug-crimping-guide',
+            4: 'conduit-body-types-guide',
+            5: 'p-clip-vibration-guide',
+            6: 'dnv-type-approval-cable-cleats',
+            7: 'ce-certification-terminal-lugs'
+        };
+
         function renderNews() {
             const grid = document.getElementById('newsGrid');
             const sortedArticles = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
             grid.innerHTML = sortedArticles.map(a => `
-                <div class="news-card" onclick="showNewsPage(${a.id})">
+                <a class="news-card" href="news/${newsSlugMap[a.id] || '#'}" style="text-decoration:none;color:inherit;display:block;">
                     <div class="news-card-img">
-                        <img src="${a.img}" alt="">
+                        <img src="${a.img}" alt="${currentLang === 'zh' ? a.title_zh : a.title_en}">
                     </div>
                     <div class="news-card-body">
                         <div class="news-card-date">${a.date}</div>
                         <h3>${currentLang === 'zh' ? a.title_zh : a.title_en}</h3>
                         <p>${currentLang === 'zh' ? a.excerpt_zh : a.excerpt_en}</p>
                     </div>
-                </div>
+                </a>
             `).join('');
         }
 

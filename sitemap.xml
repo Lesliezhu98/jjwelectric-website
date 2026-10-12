@@ -2,74 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jjwelectric.com/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/stainless-steel-cable-cleats.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/terminal-lugs-connectors.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/stainless-steel-cable-ties.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/nylon-cable-ties.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/quick-release-hose-clamps.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/conduit-fittings.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/grp-sunshades.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/p-clip-clamps.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/cable-glands.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/instrument-stanchions.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jjwelectric.com/products/lighting-series.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/cable-cleat-selection-guide.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/stainless-steel-cable-ties-offshore.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/terminal-lug-crimping-guide.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/conduit-body-types-guide.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/p-clip-vibration-guide.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/dnv-type-approval-cable-cleats.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jjwelectric.com/news/ce-certification-terminal-lugs.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
